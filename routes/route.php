@@ -5,6 +5,8 @@ class Route {
             throw new Exception();
         } elseif(!isset($controller)) {
             throw new Exception();
+        } else {
+            
         }
     }
 }
