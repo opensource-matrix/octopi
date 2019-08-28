@@ -1,3 +1,5 @@
+/* Automatically push updates to Git. */
+
 var chokidar = require('chokidar'),
     child_process = require('child_process');
 
