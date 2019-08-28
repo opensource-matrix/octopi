@@ -2,7 +2,7 @@
 $loader = require 'vendor/autoload.php';
 $loader->register();
 
-require_once :
+require_once '';
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
