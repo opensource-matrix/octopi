@@ -14,10 +14,10 @@ watcher
         child_process.execSync('publish.bat Automatic Update ' + crypto.createHash('sha1').update(current_date + random).digest('hex'));
     })
   .on('change', function(path) {
-        child_process.execSync('publish.bat ' + crypto.createHash('sha1').update(current_date + random).digest('hex'));
+        child_process.execSync('publish.bat Automatic Update ' + crypto.createHash('sha1').update(current_date + random).digest('hex'));
     })
   .on('unlink', function(path) {
-        child_process.execSync('publish.bat ' + crypto.createHash('sha1').update(current_date + random).digest('hex'));
+        child_process.execSync('publish.bat Automatic Update ' + crypto.createHash('sha1').update(current_date + random).digest('hex'));
     })
   .on('error', function(path) {
     throw new Error('Error.');
