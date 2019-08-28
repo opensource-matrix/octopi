@@ -14,6 +14,7 @@ class Route {
     function getData() {
         return array(
             path => $this->path,
-        )
+            controller => $this->controller
+        );
     }
 }
