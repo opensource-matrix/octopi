@@ -11,7 +11,7 @@ class Route {
         }
     }
 
-    public function getData() {
+    function getData() {
         return {
             
         }
