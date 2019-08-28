@@ -4,7 +4,7 @@ class Route {
         if(!isset($path)) {
             throw new Exception();
         } elseif(!isset($controller)) {
-            
+            throw new Exception();
         }
     }
 }
