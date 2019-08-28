@@ -18,7 +18,7 @@ case '/':
         break;
 
     default:
-        $response->setContent('Not found !');
+        $response->setContent('Not found!');
     $response->setStatusCode(Response::HTTP_NOT_FOUND);
 }
 
