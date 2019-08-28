@@ -7,6 +7,7 @@ class Route {
             throw new Exception();
         } else {
             $this->path = $path;
+            $this->controller = $controller;
         }
     }
 }
