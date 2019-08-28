@@ -8,6 +8,8 @@ use Symfony\Component\HttpFoundation\Response;
 $request = Request::createFromGlobals();
 $response = new Response();
 
+
+
 switch ($request->getPathInfo()) {
     case '/':
         $response->setContent('This is the website home');
