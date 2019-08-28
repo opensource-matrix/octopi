@@ -1,10 +1,25 @@
 <?php
-require 'lib/Framework/Core.php';
-  
+$loader = require 'vendor/autoload.php';
+$loader->register();
+
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+
 $request = Request::createFromGlobals();
+$response = new Response();
 
-// Our framework is now handling itself the request
-$app = new Framework\Core();
+switch ($request->getPathInfo()) {
+case '/':
+    $response->setContent('This is the website home');
+    break;
 
-$response = $app->handle($request);
+    case '/about':
+        $response->setContent('This is the about page');
+        break;
+
+    default:
+        $response->setContent('Not found !');
+    $response->setStatusCode(Response::HTTP_NOT_FOUND);
+}
+
 $response->send();
