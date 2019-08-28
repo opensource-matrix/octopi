@@ -14,6 +14,7 @@ $path = $request->getPathInfo();
 
 foreach($routes as $route) {
     $data = $route->getData();
+    echo $data['controller'];
     if($data['path'] === $path) {
         echo "Great!";
         if(!file_exists('./controllers/' + $data['controller'] + '.php')) {
