@@ -1,6 +1,6 @@
 <?php
 class Route {
-    public function __construct($path, ) {
-
+    public function __construct($path, $controller) {
+        
     }
 }
