@@ -16,7 +16,6 @@ class Core implements HttpKernelInterface
             case '/about':
                 $response = new Response('This is the about page');
                 break;
-
             default:
                 $response = new Response('Not found !', Response::HTTP_NOT_FOUND);
         }
