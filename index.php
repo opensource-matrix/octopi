@@ -15,7 +15,7 @@ $path = $request->getPathInfo();
 foreach($routes as $route) {
     $data = $route->getData();
     if($data['path'] === $path) {
-        echo file_exists("test.txt");
+        echo file_exists("test.txt") ? 'EXISTS';
         if(!file_exists('./controllers/' + $data['controller'] + '.php') == 1) {
             $response->setContent("Controller doesn't exist.");
             $response->status(404);
