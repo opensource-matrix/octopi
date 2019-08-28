@@ -3,16 +3,23 @@ $loader = require 'vendor/autoload.php';
 $loader->register();
 
 use Symfony\Component\HttpFoundation\Request;
-    
+use Symfony\Component\HttpFoundation\Response;
+
 $request = Request::createFromGlobals();
-    
-switch($request->getPathInfo()) {
-    case '/':
-        echo 'This is the home page';
-        break;
+$response = new Response();
+
+switch ($request->getPathInfo()) {
+case '/':
+    $response->setContent('This is the website home');
+    break;
+
     case '/about':
-        echo 'This is the about page';
-        break;   
+        $response->setContent('This is the about page');
+        break;
+
     default:
-        echo 'Not found!';
+        $response->setContent('Not found !');
+    $response->setStatusCode(Response::HTTP_NOT_FOUND);
 }
+
+$response->send();
