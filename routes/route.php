@@ -13,7 +13,7 @@ class Route {
 
     function getData() {
         return array(
-            path -> 
+            path => 
         )
     }
 }
