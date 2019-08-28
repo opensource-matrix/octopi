@@ -9,10 +9,9 @@ $request = Request::createFromGlobals();
 $response = new Response();
 
 switch ($request->getPathInfo()) {
-case '/':
-    $response->setContent('This is the website home.');
-    break;
-
+    case '/':
+        $response->setContent('This is the website home');
+        break;
     case '/about':
         $response->setContent('This is the about page.');
         break;
