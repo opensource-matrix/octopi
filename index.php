@@ -10,7 +10,7 @@ $response = new Response();
 
 $path = $request->getPathInfo();
 
-foreach(i as )
+foreach($routes as )
 
 /*
 switch ($request->getPathInfo()) {
