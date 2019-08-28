@@ -10,4 +10,8 @@ class Route {
             $this->controller = $controller;
         }
     }
+
+    public function getData() {
+        
+    }
 }
