@@ -1,0 +1,35 @@
+{
+  "name": "octopi",
+  "version": "1.0.0",
+  "description": "An awesome web framework to create robust applications.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opensource-matrix/octopi.git"
+  },
+  "keywords": [
+    "php",
+    "node",
+    "nodejs",
+    "node.js",
+    "js",
+    "javascript",
+    "java",
+    "script",
+    "express",
+    "express-php",
+    "support",
+    "framework",
+    "web"
+  ],
+  "author": "Matrix",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opensource-matrix/octopi/issues"
+  },
+  "homepage": "https://github.com/opensource-matrix/octopi#readme"
+}
