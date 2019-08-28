@@ -1,3 +1,4 @@
+<?php
 namespace Framework;
 
 use Symfony\Component\HttpFoundation\Request;
