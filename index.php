@@ -10,11 +10,11 @@ $response = new Response();
 
 switch ($request->getPathInfo()) {
 case '/':
-    $response->setContent('This is the website home');
+    $response->setContent('This is the website home.');
     break;
 
     case '/about':
-        $response->setContent('This is the about page');
+        $response->setContent('This is the about page.');
         break;
 
     default:
