@@ -14,9 +14,20 @@ $path = $request->getPathInfo();
 
 foreach($routes as $route) {
     $data = $route->getData();
-    if($data.path === $path) {
-        $response->setContent("Expected ".$data->path."!");
+    if($data['path'] === $path) {
+        if(!file_exists('./controllers/' + $data['controller'] + '.php')) {
+            $response->setContent("Controller doesn't exist.");
+            $response->status(404);
+        } else {
+            include './controllers/' + $data['controller'] + '.php';
+        }
+        //$good = True;
     }
+}
+
+if(!$good) {
+    $response->setContent("Not Found.");
+    $response->status(404);
 }
 
 /*
