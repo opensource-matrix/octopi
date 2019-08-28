@@ -2,5 +2,5 @@
 require_once 'route.php';
 
 $routes = [
-    new Route()
+    new Route('/')
 ];
