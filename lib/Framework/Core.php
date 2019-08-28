@@ -13,7 +13,6 @@ class Core implements HttpKernelInterface
             case '/':
                 $response = new Response('This is the website home');
                 break;
-
             case '/about':
                 $response = new Response('This is the about page');
                 break;
