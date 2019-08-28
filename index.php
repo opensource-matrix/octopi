@@ -1,13 +1,6 @@
 <?php
-$request = $_SERVER['REQUEST_URI'];
+$name = isset($_GET['name']) ? $_GET['name'] : 'World';
 
-$debug = False;
+header('Content-Type: text/html; charset=utf-8');
 
-if(substr($request, 0, 7) == '/octopi') {
-    $debug = True;
-}
-
-if($debug == True) {
-    echo $request;
-}
-?>
+printf('Hello %s', htmlspecialchars($name, ENT_QUOTES, 'UTF-8'));
