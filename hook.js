@@ -3,7 +3,7 @@
 var chokidar = require('chokidar'),
     child_process = require('child_process');
 
-var watcher = chokidar.watch('.', {ignored: /(pacakge-lock.json)/, persistent: true});
+var watcher = chokidar.watch('.', {ignored: /(package-lock.json)/, persistent: true});
 
 var crypto = require('crypto');
 var current_date = (new Date()).valueOf().toString();
