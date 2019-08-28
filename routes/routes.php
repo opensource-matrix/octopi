@@ -5,4 +5,4 @@ $routes = [
     new Route('/', 'index')
 ];
 
-echo "Routes: ".$routes
+echo "Routes: ".$routes;
