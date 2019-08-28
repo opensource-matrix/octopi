@@ -21,9 +21,9 @@ watcher
     });
     })
   .on('unlink', function(path) {
-    child_process.execSync('publish.bat Automatic Update ' + crypto.createHash('sha1').update(current_date + random).digest('hex'), {
-        stdio: 'ignore'
-    });
+        child_process.execSync('publish.bat Automatic Update ' + crypto.createHash('sha1').update(current_date + random).digest('hex'), {
+            stdio: 'ignore'
+        });
     })
   .on('error', function(path) {
     throw new Error('Error.');
