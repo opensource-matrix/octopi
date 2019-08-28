@@ -13,7 +13,7 @@ $response = new Response();
 $path = $request->getPathInfo();
 
 foreach($routes as $route) {
-    
+    if($path) == 
 }
 
 /*
