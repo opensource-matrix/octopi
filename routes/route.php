@@ -12,6 +12,8 @@ class Route {
     }
 
     public function getData() {
-        
+        return {
+            
+        }
     }
 }
