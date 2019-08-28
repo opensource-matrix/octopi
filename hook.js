@@ -11,7 +11,7 @@ var random = Math.random().toString();
 
 watcher
   .on('add', function(path) {
-        child_process.execSync('publish.bat Automatic update.');
+        child_process.execSync('publish.bat );
         console.log('Found update.');
     })
   .on('change', function(path) {
