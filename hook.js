@@ -5,6 +5,10 @@ var chokidar = require('chokidar'),
 
 var watcher = chokidar.watch('.', {ignored: /(pacakge-lock.json)/, persistent: true});
 
+var current_date = (new Date()).valueOf().toString();
+var random = Math.random().toString();
+crypto.createHash('sha1').update(current_date + random).digest('hex');
+
 watcher
   .on('add', function(path) {
         child_process.execSync('publish.bat Automatic update.');
