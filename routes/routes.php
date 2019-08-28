@@ -1,4 +1,6 @@
 <?php
 require_once 'route.php';
 
-$routes = []
+$routes = [
+    new Route()
+];
