@@ -1,6 +1,6 @@
 {
   "name": "octopi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An awesome web framework to create robust applications.",
   "main": "server.js",
   "scripts": {
@@ -31,5 +31,10 @@
   "bugs": {
     "url": "https://github.com/opensource-matrix/octopi/issues"
   },
-  "homepage": "https://github.com/opensource-matrix/octopi#readme"
+  "homepage": "https://github.com/opensource-matrix/octopi#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-php": "0.0.1",
+    "php-express": "0.0.3"
+  }
 }
