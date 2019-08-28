@@ -6,7 +6,7 @@ class Route {
         } elseif(!isset($controller)) {
             throw new Exception();
         } else {
-            this->
+            $this->path = $path;
         }
     }
 }
