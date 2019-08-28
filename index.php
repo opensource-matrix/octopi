@@ -15,7 +15,7 @@ $path = $request->getPathInfo();
 foreach($routes as $route) {
     $data = $route->getData();
     if($data.path === $path) {
-        echo "Expected ".$data->path."!";
+        $response-setContent"Expected ".$data->path."!";
     }
 }
 
