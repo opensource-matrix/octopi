@@ -12,8 +12,8 @@ class Route {
     }
 
     function getData() {
-        return {
+        return array(
             
-        }
+        )
     }
 }
