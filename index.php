@@ -10,6 +10,7 @@ $response = new Response();
 
 $path = $request->getPathInfo();
 
+/*
 switch ($request->getPathInfo()) {
     case '/':
         $response->setContent('This is the website home');
@@ -21,5 +22,6 @@ switch ($request->getPathInfo()) {
         $response->setContent('Not found!');
         $response->setStatusCode(Response::HTTP_NOT_FOUND);
 }
+*/
 
 $response->send();
