@@ -13,7 +13,7 @@ $map = [
 ];
 
 $path = $request->getPathInfo();
-if (isset($map[$path])) {
+if(isset($map[$path])) {
     require $map[$path];
 } else {
     $response->setStatusCode(404);
