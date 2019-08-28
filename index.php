@@ -10,6 +10,8 @@ $response = new Response();
 
 $path = $request->getPathInfo();
 
+
+
 /*
 switch ($request->getPathInfo()) {
     case '/':
