@@ -22,6 +22,7 @@ foreach($routes as $route) {
             $good = False;
         } else {
             require_once 'controllers/' + $data['controller'] + '.php';
+            $good = True;
         }
         //$good = True;
     }
