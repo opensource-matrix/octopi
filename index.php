@@ -20,7 +20,7 @@ foreach($routes as $route) {
             $response->setContent("Controller doesn't exist.");
             $response->status(404);
         } else {
-            include './controllers/' + $data['controller'] + '.php';
+            require_once './controllers/' + $data['controller'] + '.php';
         }
         //$good = True;
     }
