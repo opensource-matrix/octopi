@@ -15,10 +15,9 @@ switch ($request->getPathInfo()) {
     case '/about':
         $response->setContent('This is the about page.');
         break;
-
     default:
         $response->setContent('Not found!');
-    $response->setStatusCode(Response::HTTP_NOT_FOUND);
+        $response->setStatusCode(Response::HTTP_NOT_FOUND);
 }
 
 $response->send();
