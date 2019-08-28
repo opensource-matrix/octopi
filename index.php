@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 $request = Request::createFromGlobals();
 $response = new Response();
 
-
+$path = $request->getPathInfo();
 
 switch ($request->getPathInfo()) {
     case '/':
