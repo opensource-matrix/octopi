@@ -25,12 +25,10 @@ class octopi_routes {
     }
 
     public static function get($path, $controller) {
-        echo "Test!";
         array_push($this->gets, array(
             path => $path,
             controller => $controller
         ));
-        echo "Test!";
     }
 
     function getData() {
