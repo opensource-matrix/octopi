@@ -9,6 +9,6 @@ Routing with Octopi is easy with the inbuilt `class` `Route`.  It can be initial
 new Route('[PATH]', '[CONTROLLER FILE NAME]');
 ```
 
-Here is the default `routes/routes.php` file:
+Here is the default `routes/routes.php` file, as an example.
 ```php
 ```
