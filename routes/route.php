@@ -24,7 +24,8 @@ class octopi_routes {
     public $_this;
 
     public function __construct() {
-        $this->gets = array();
+        $this->$gets = array();
+        $this->$_this = $this;
     }
 
     public static function get($path, $controller) {
