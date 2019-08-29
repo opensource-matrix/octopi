@@ -42,6 +42,9 @@ echo "Hello, world!";
 ```
 
 And to use this controller, go to `routes/routes.php` and use the `$Route::get` method.
+```php
+/* */
+```
 
 ## Hosting
 To preview the above example, run the command:
