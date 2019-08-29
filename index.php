@@ -13,6 +13,8 @@ Toolkit Modules
 Load the Tools that the user can use.
 */
 include 'app/view.php';
+include 'app/model.php';
+include 'app/template.php';
 
 /*
 Route Modules
@@ -73,3 +75,10 @@ This sends the response to the client, whether it's a web browser
 or an HTTP request.
 */
 $response->send();
+
+class TestModel extends Model {
+    public $awesome = 'AmAzIng';
+}
+
+$grill1 = new grill(new TestModel);
+echo $grill1.template('<h1>{{ echo @tots; }}</h1>');
