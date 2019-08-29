@@ -13,7 +13,7 @@ function join_paths() {
 function view($path) {
     if(file_exists(join_paths(__DIR__, 'views', '$path'))) {
         $fn = fopen(join_paths(__DIR__, 'views', '$path'), 'r') or die('Unable to open file!');
-        return fread($myfile,filesize("webdictionary.txt"));
+        return fread($myfile, filesize("webdictionary.txt"));
     } else {
         echo 'TEST';
     }
