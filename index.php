@@ -20,7 +20,7 @@ Toolkit Modules
 ---------------
 Load the Tools that the user can use.
 */
-include 'app/toolkit.php';
+include 'app/view.php';
 
 /*
 Symfony Modules
