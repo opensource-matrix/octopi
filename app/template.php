@@ -8,7 +8,7 @@ built in, and it's not directly used by the user.
 
 function Grill($file, $model) {
     if(is_subclass_of($model, 'Model')) {
-        $d
+        $data = $model->getData();
         foreach($data as $key => $value)
         {
             $template = str_replace('{'.$key.'}', $value, $template);
