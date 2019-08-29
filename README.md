@@ -29,8 +29,6 @@ Controlling your web page can be done directly from the `routes/routes.php` file
 ### Direct Controllers
 To use `Direct Controllers`, you can pass a function to `$Route::get`.
 ```php
-<?php
-
 $Route::get('/', function() {
     echo "Hello, world!";
     /* Do whatever you'd like from here on. */
