@@ -7,6 +7,9 @@ Loads the autoloader provided with Composer.
 $loader = require 'vendor/autoload.php';
 $loader->register();
 
+/*
+Load the Routes.
+*/
 include 'routes/route.php';
 include 'routes/routes.php';
 
