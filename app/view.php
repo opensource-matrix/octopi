@@ -16,7 +16,6 @@ function view($path) {
         $result = null;
         while(! feof($fn))  {
 	        $result = fgets($fn);
-	        echo $result;
         }
 
         fclose($fn);
