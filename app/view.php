@@ -14,7 +14,7 @@ function view($path) {
     $path = realpath(join_paths(__DIR__, '..', 'views', $path));
     echo file_exists($path);
     if(file_exists($path)) {
-        $fn = fopen($path, 'r') or die('Unable to open file!');
+        $handle = fopen($path, 'r') or die('Unable to open file!');
         return fread($fn, filesize($path, 'r'));
     }
 }
