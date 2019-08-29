@@ -37,7 +37,7 @@ foreach($routes as $route) {
     }
 }
 
-if(!$good === True) {
+if(!$good) {
     echo '404; path not found :(';
 }
 
