@@ -6,3 +6,4 @@ if($_GET['test']) {
 } else {
     echo "Is not just a test!!";
 }
+?>
