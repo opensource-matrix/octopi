@@ -33,6 +33,7 @@ class octopi_routes {
             'path' => $path,
             'controller' => $controller
         ));
+        echo 'Test';
     }
 }
 
