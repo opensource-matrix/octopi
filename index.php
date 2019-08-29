@@ -3,6 +3,7 @@
 $loader = require 'vendor/autoload.php';
 $loader->register();
 
+echo 'Hello, world!';
 include 'routes/routes.php';
 echo isset($Route);
 
