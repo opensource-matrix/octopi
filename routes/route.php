@@ -29,10 +29,12 @@ class octopi_routes {
     }
 
     public static function get($path, $controller) {
-        $this->gets.append(array(
-            'path' => $path,
-            'controller' => $controller
-        ));
+        try {
+            $this->gets.append(array(
+                'path' => $path,
+                'controller' => $controller
+            ));
+        }
         echo 'hello, world!';
     }
 }
