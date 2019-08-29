@@ -31,8 +31,8 @@ foreach($gets as $route) {
         if(!file_exists(join_paths('controllers', $route['controller']))) {
             echo "Path does not exist.";
         } else {
+            echo "Test";
             if(is_callable($route['controller'])) {
-                echo "Test";
                 $func = $route['controller'];
                 $func();
                 $good = True;
