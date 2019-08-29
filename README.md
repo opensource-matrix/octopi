@@ -12,14 +12,14 @@ Routing with Octopi is simple, as it includes it's own Routing toolkit.  It curr
 Route::get(string PATH, string CONTROLLER) - When the said path is loaded, it will pass it to the Controller with the name
 you provided.
 */
-Route::get('/', 'index.php')
+$Route::get('/', 'index.php')
 ```
 
 Here is the default `routes/routes.php` file, as an example.
 ```php
 <?php
-Route::get('/', 'index.php');
-Route::get('/home', 'index.php');
+$Route::get('/', 'index.php');
+$Route::get('/home', 'index.php');
 ```
 
 ## Controllers
