@@ -35,6 +35,6 @@ class grill
             $this->tags[$key] = $value;
         }
         $this->replaceTags();
-        return $this->template;
+        return $this->$template;
     }
 }
