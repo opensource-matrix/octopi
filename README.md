@@ -21,4 +21,4 @@ $routes = [
 ```
 
 ## Controllers
-The Controller module is incomplete, but we plan to implement templating with views and other 
+The Controller module is incomplete, but we plan to implement templating with views and other standard tools for PHP frameworks.
