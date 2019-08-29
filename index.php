@@ -30,6 +30,8 @@ foreach($routes as $route) {
     }
 }
 
+if(!$good === True)
+
 /*
 switch ($request->getPathInfo()) {
     case '/':
