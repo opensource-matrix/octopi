@@ -24,7 +24,6 @@ class octopi_routes {
 
     public function __construct() {
         $this->gets = array();
-        echo "Hello world from __construct <br>";
         print_r($this->gets);
     }
 
