@@ -3,9 +3,8 @@
 $loader = require 'vendor/autoload.php';
 $loader->register();
 
-echo 'Hello, world!';
 include 'routes/routes.php';
-echo isset($Route);
+echo 'Hello, world!';
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
