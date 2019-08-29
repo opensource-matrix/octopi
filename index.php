@@ -30,7 +30,9 @@ foreach($routes as $route) {
     }
 }
 
-if(!$good === True)
+if(!$good === True) {
+    
+}
 
 /*
 switch ($request->getPathInfo()) {
