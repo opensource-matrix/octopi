@@ -11,7 +11,7 @@ function doGet($gets, $path, $response) {
             $pathseg = $paths[$i];
             $g = preg_match('/\{([a-zA-Z0-9-_]*)\}/', $pathseg, $matches);
             echo $g;
-            if($g == 1) {
+            if($g) {
                 $regex = $regex . '\/[a-zA-Z0-9-_]';
             } else {
                 echo $paths[i];
@@ -19,9 +19,8 @@ function doGet($gets, $path, $response) {
             }
             $i = $i + 1;
         }
-        echo $regex . '<br>';
         $regex = $regex . '/';
-        print_r($vars);
+        echo $regex . '<br>';
         if(preg_match($regex, $path) == 1) {
             if(is_callable($route['controller'])) {
                 $func = $route['controller'];
