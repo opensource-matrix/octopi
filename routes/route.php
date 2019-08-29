@@ -32,7 +32,7 @@ class octopi_routes {
         echo '<br><br>Exists: ';
         array_push($this->$gets, array(
             'path': $path,
-            'controller': $controller
+            'controller' => $controller
         ))
     }
 }
