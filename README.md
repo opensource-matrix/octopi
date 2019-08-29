@@ -41,7 +41,7 @@ Anywho, `External Controllers` are PHP files in the `controllers/` folder.
 echo "Hello, world!";
 ```
 
-
+And to use this controller, go to 
 
 ## Hosting
 To preview the above example, run the command:
