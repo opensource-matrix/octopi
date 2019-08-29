@@ -9,7 +9,9 @@ function doGet($gets, $path, $response) {
         foreach($paths as $pathseg) {
             if(!$pathseg == '') {
                 preg_match('/\{([a-zA-Z0-9-_]*)\}/', $pathseg, $matches);
-                
+                if(isset($matches[1])) {
+                    
+                }
             }
         }
         print_r($vars);
@@ -26,5 +28,4 @@ function doGet($gets, $path, $response) {
 }
 
 if($_SERVER['REQUEST_METHOD'] == 'GET') {
-    $good = doGet($gets, $path, $response);
-}
+   
