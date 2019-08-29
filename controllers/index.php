@@ -1,6 +1,6 @@
 <?php
 
-echo "Hello, world!<br\>";
+echo "Hello, world!<br>";
 if($_GET['test']) {
-    echo "<br\>Just a test!";
+    echo "<br>Just a test!";
 }
