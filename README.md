@@ -9,7 +9,7 @@ Routing with Octopi is simple, as it includes it's own Routing toolkit.  It curr
 
 ```php
 /*
-Route::get(string PATH, string CONTROLLER) -
+Route::get(string PATH, string CONTROLLER) - 
 */
 Route::get('/', 'index.php')
 ```
