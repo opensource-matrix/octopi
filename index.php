@@ -46,7 +46,7 @@ include 'app/get.php';
 include 'app/post.php';
 
 if(!$good) {
-    $response->setContent('Not found.')
+    $response->setContent('Not found.');
     $response->setStatus(404);
 }
 
