@@ -18,7 +18,7 @@ function view($path) {
         $data = fread($p, filesize($p, 'r'));
         fclose($handle);
         */
-        $data = 'Hello, world!';
+        $data = file_get_contents($p);
         return $data;
     } else {
         return 'Octopi View ' . $path . ' does not exist.';
