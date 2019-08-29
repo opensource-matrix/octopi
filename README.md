@@ -39,7 +39,7 @@ $Route::get('/', function() {
 
 ### External Controllers
 `External Controllers` are helpful for keeping organized, but if you are just making a smaller application, I would recommend a `Direct Controller`.
-Anywho, 
+Anywho, `External Controllers` are PHP files in the `controllers/` folder.
 
 ## Hosting
 To preview the above example, run the command:
