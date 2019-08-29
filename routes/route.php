@@ -28,7 +28,7 @@ class octopi_routes {
 
     public static function get($path, $controller) {
         echo '<br><br>Exists: ';
-        echo isset($Route::$gets) ? 'true' : 'false';
+        echo isset($Route) ? 'true' : 'false';
     }
 }
 
