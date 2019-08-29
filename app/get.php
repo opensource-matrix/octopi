@@ -1,6 +1,6 @@
 <?php
 
-function doGet($gets) {
+function doGet($gets, $path) {
     $good = False;
     foreach($gets as $route) {
         if($route['path'] === $path) {
