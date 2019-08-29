@@ -62,4 +62,6 @@ Is not just a test!!
 ```
 Now try going to `http://localhost:8000`, the output should change:
 ```
+Hello, world!
+Just a test!
 ```
