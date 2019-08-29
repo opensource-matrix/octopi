@@ -1,6 +1,6 @@
 <?php
 
-function doGet($gets, $path, $response) {
+function doGet() {
     $good = False;
     foreach($gets as $route) {
         if($route['path'] === $path) {
@@ -18,5 +18,5 @@ function doGet($gets, $path, $response) {
 }
 
 if($_SERVER['REQUEST_METHOD'] == 'GET') {
-    doGet($gets, $path, $response);
+    doGet();
 }
