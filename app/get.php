@@ -2,6 +2,7 @@
 
 function doGet($gets, $path, $response) {
     $good = False;
+    echo 'test';
     $paths = split('/\//', $path);
     print_r($paths);
     foreach($gets as $route) {
