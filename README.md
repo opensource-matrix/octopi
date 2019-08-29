@@ -1,2 +1,2 @@
 # Octopi
-Octopi is a 
+Octopi is a PHP
