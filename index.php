@@ -32,7 +32,7 @@ foreach($gets as $route) {
             echo "Path does not exist.";
         } else {
             if(!is_callable($route['controller'])) {
-                
+                $route['controller']();
             } elseif(gettype($route['controller']) == 'string') {
                 require_once join_paths('controllers', $route['controller']);
                 $good = True;
