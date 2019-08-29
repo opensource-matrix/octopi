@@ -34,7 +34,7 @@ class octopi_routes {
 
     function getData() {
         return array(
-            get => $this->get
-        )
+            'get' => $this->get
+        );
     }
 }
