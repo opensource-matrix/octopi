@@ -16,13 +16,6 @@ include 'routes/route.php';
 include 'routes/routes.php';
 
 /*
-Toolkit Modules
----------------
-Load the Tools that the user can use.
-*/
-include 'app/view.php';
-
-/*
 Symfony Modules
 ---------------
 The Symfony modules are used server side for HTTP requests.
