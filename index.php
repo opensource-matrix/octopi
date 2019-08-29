@@ -36,10 +36,10 @@ foreach($gets as $route) {
             if(!file_exists(join_paths('controllers', $route['controller']))) {
                 echo "Path does not exist.";
             } else {
+                require_once join_paths('controllers', $route['controller']);
+            $good = True;
                 echo "Test";
             }
-            require_once join_paths('controllers', $route['controller']);
-            $good = True;
         }
         //$good = True;
     }
