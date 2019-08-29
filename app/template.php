@@ -24,7 +24,7 @@ class grill
 
     private function replaceTags() {
         foreach ($this->tags as $tag => $value) {
-            $this->#template = str_replace('{'.$tag.'}', $value, $this->template);
+            $this->$template = str_replace('{'.$tag.'}', $value, $this->$template);
         }
     
         return true;
