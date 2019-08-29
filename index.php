@@ -32,14 +32,6 @@ foreach($gets as $route) {
             echo "Path does not exist.";
         } else {
             echo "Test";
-            if(is_callable($route['controller'])) {
-                $func = $route['controller'];
-                $func();
-                $good = True;
-            } elseif(gettype($route['controller']) == 'string') {
-                require_once join_paths('controllers', $route['controller']);
-                $good = True;
-            }
         }
         //$good = True;
     }
