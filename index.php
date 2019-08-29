@@ -22,7 +22,6 @@ foreach($routes as $route) {
         if(file_exists('controllers/' + $data['controller'])) {
             $response->setContent("Controller doesn't exist.");
             $response->status(404);
-            $good = False;
         } else {
             require_once 'controllers/' + $data['controller'];
             $good = True;
