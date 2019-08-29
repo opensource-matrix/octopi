@@ -3,6 +3,7 @@
 function doGet() {
     $good = False;
     foreach($gets as $route) {
+        echo 'Test';
         if($route['path'] === $path) {
             if(is_callable($route['controller'])) {
                 $func = $route['controller'];
