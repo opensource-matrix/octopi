@@ -12,8 +12,8 @@ class octopi_route {
         $this->get = array();
     }
 
-    function get() {
-        
+    function get(path, controller) {
+
     }
 
     function getData() {
