@@ -18,6 +18,6 @@ function view($path) {
         fclose($handle);
         return $data;
     } else {
-        return 'Octopi View does not exist.';
+        return 'Octopi View '' does not exist.';
     }
 }
