@@ -46,7 +46,7 @@ include 'app/get.php';
 include 'app/post.php';
 
 if(!$good) {
-    echo '404; path not found :(';
+    $response->setStatus()
 }
 
 $response->send();
