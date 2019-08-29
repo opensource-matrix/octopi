@@ -28,4 +28,5 @@ function doGet($gets, $path, $response) {
 }
 
 if($_SERVER['REQUEST_METHOD'] == 'GET') {
-   
+    $good = doGet($gets, $path, $response);
+}
