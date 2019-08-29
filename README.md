@@ -8,7 +8,7 @@ Routing with Octopi is simple, as it includes it's own Routing toolkit.  It curr
 - `GET`
 
 ```php
-new Route('[PATH]', '[CONTROLLER FILE NAME]');
+Route::get('')
 ```
 
 Here is the default `routes/routes.php` file, as an example.
