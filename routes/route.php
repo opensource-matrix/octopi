@@ -21,7 +21,7 @@ class route {
 
 class octopi_routes {
     public function __construct() {
-        $this->gets = (array) null;
+        $this->gets = json_decode ("{}");
     }
 
     public static function get($path, $controller) {
