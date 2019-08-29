@@ -6,7 +6,7 @@ function doGet($gets, $path) {
         if($route['path'] === $path) {
             if(is_callable($route['controller'])) {
                 $func = $route['controller'];
-                $func();
+                $response->setContent('This is the about page.');
                 $good = True;
             } elseif(gettype($route['controller']) == 'string') {
                 if(!file_exists(join_paths('controllers', $route['controller']))) {
