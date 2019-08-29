@@ -10,6 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 $request = Request::createFromGlobals();
 $response = new Response();
+echo "Test2s";
 
 $path = $request->getPathInfo();
 
