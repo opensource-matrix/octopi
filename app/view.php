@@ -7,7 +7,7 @@ function join_paths() {
         if ($arg !== '') { $paths[] = $arg; }
     }
 
-    return preg_replace('#/+#','/',join(DIRECTORY_SEPARATOR, $paths));
+    return preg_replace('#/+#', DIRECTORY_SEPARATOR, join(DIRECTORY_SEPARATOR, $paths));
 }
 
 function view($path) {
