@@ -1,5 +1,5 @@
 <?php
 
 $Route::get('/test', function() {
-    return '';
+    return view('index.html');
 });
