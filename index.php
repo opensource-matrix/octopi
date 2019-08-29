@@ -18,7 +18,7 @@ include 'app/post.php';
 /*
 Symfony Modules
 ---------------
-The Symfony modules are used server side to 
+The Symfony modules are used server side for HTTP requests.
 */
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
