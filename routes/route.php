@@ -22,7 +22,7 @@ class route {
 class octopi_routes {
     public function __construct() {
         $this->gets = array();
-        echo "<br>Hello world from __construct";
+        echo "Hello world from __construct";
     }
 
     public static function get($path, $controller) {
