@@ -66,17 +66,3 @@ This sends the response to the client, whether it's a web browser
 or an HTTP request.
 */
 $response->send();
-
-/*
-switch ($request->getPathInfo()) {
-    case '/':
-        $response->setContent('This is the website home');
-        break;
-    case '/about':
-        $response->setContent('This is the about page.');
-        break;
-    default:
-        $response->setContent('Not found!');
-        $response->setStatusCode(Response::HTTP_NOT_FOUND);
-}
-*/
