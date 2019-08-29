@@ -38,7 +38,7 @@ $Route::get('/', function() {
 Anywho, `External Controllers` are PHP files in the `controllers/` folder.
 ```php
 /* controllers/index.php */
-
+echo "Hello, world!";
 ```
 
 ## Hosting
