@@ -77,7 +77,7 @@ or an HTTP request.
 $response->send();
 
 class TestModel extends Model {
-    public $awesome = 'AmAzIng';
+    public $title = 'My Octopi Website';
 }
 
 echo Grill('<h2>{title}</h2>', new TestModel);
