@@ -8,6 +8,13 @@ $loader = require 'vendor/autoload.php';
 $loader->register();
 
 /*
+Toolkit Modules
+---------------
+Load the Tools that the user can use.
+*/
+include 'app/view.php';
+
+/*
 Route Modules
 -------------
 Load the Routes to be used later one.
