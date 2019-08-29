@@ -41,7 +41,7 @@ Anywho, `External Controllers` are PHP files in the `controllers/` folder.
 echo "Hello, world!";
 ```
 
-And to use this controller, go to `routes/routes.php`
+And to use this controller, go to `routes/routes.php` and use the `$Route::get` method.
 
 ## Hosting
 To preview the above example, run the command:
