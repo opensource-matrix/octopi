@@ -33,8 +33,6 @@ class octopi_routes {
             'path' => $path,
             'controller' => $controller
         ));
-
-        print_r($Route);
     }
 }
 
