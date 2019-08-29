@@ -6,7 +6,7 @@ Grill is Octopi's templating engine for models & views.  It's
 built in, and it's not directly used by the user.
 */
 
-class template
+class grill
 {
     // Tags array
     private $tags = [];
