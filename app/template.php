@@ -11,8 +11,8 @@ function Grill($file, $model) {
         $data = $model->getData();
         foreach($data as $key => $value)
         {
-            $template = str_replace('{'.$key.'}', $value, $template);
+            $data = str_replace('{'.$key.'}', $value, $template);
         }
-        return $template;
+        return $data;
     }
 }
