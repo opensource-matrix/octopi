@@ -20,4 +20,5 @@ function doGet($gets) {
             //$good = True;
         }
     }
+    return $good;
 }
