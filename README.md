@@ -54,3 +54,5 @@ To preview the above example, run the command:
 symfony server:start
 ```
 It should host at port `8000`.
+
+If you go to 
