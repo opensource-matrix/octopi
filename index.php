@@ -5,6 +5,7 @@ $loader = require 'vendor/autoload.php';
 $loader->register();
 
 include 'routes/routes.php';
+echo isset($Route);
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
