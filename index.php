@@ -42,6 +42,7 @@ function join_paths() {
 
 $routes = $Route->getData();
 $gets = $routes['gets'];
+$gets = $routes['gets'];
 
 /* GET Method */
 if($_SERVER['REQUEST_METHOD'] == 'GET') {
