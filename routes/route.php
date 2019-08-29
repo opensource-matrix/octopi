@@ -35,7 +35,7 @@ class octopi_routes {
                 'controller' => $controller
             ));
         } catch(Exception $e) {
-
+            echo 'Caught exception: ',  $e->getMessage(), "\n";
         }
         echo 'hello, world!';
     }
