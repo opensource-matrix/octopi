@@ -69,5 +69,3 @@ switch ($request->getPathInfo()) {
         $response->setStatusCode(Response::HTTP_NOT_FOUND);
 }
 */
-
-$response->send();
