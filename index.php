@@ -9,7 +9,7 @@ include 'routes/routes.php';
 /*
 Kernel Modules
 --------------
-
+The Kernel modules power both ends of your application.
 */
 include 'app/get.php';
 include 'app/post.php';
