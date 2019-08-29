@@ -49,4 +49,4 @@ $routes = [
 ```
 
 ## Hosting
-To preview the above example,
+To preview the above example, run the command 
