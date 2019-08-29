@@ -26,6 +26,8 @@ function join_paths() {
 
 $routes = $Route->getData();
 $gets = $routes['gets'];
+
+/* GET Method */
 foreach($gets as $route) {
     if($route['path'] === $path) {
         if(is_callable($route['controller'])) {
