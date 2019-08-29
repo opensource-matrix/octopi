@@ -14,7 +14,7 @@ class grill
     // Template file
     private $template;
 
-    public function __construct(text) {
+    public function __construct($text) {
         
     }
 }
