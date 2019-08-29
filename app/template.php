@@ -23,6 +23,14 @@ class grill
         $this->tags[$tag] = $value;
     }
 
+    private function replaceTags() {
+        foreach ($this->tags as $tag => $value) {
+            $this->template = str_replace('{'.$tag.'}', $value, $this->template);
+        }
+    
+        return true;
+    }
+
     public function render()
     {
         $this->replaceTags();
