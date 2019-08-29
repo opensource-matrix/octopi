@@ -2,6 +2,7 @@
 
 function doGet($gets, $path, $response) {
     $good = False;
+    $parsed = parse_url($path);
     foreach($gets as $route) {
         if($route['path'] === $path) {
             if(is_callable($route['controller'])) {
