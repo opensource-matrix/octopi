@@ -45,13 +45,6 @@ They are utilized in this very script.
 include 'app/get.php';
 include 'app/post.php';
 
-/* GET Method */
-if($_SERVER['REQUEST_METHOD'] == 'GET') {
-    $good = doGet($gets, $path, $response);
-} elseif($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $good = doPost($posts, $path, $response);
-}
-
 if(!$good) {
     echo '404; path not found :(';
 }
