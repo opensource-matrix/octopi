@@ -8,7 +8,6 @@ function doGet($gets, $path, $response) {
         $i = 0;
         foreach($paths as $pathseg) {
             $g = preg_match('/\{([a-zA-Z0-9-_]*)\}/', $pathseg, $matches);
-            print_r($matches);
             if(g) {
                 $regex = $regex . '\/[a-zA-Z0-9-_]';
             } else {
