@@ -26,7 +26,6 @@ function join_paths() {
 $routes = $Route->getData();
 $gets = $routes['gets'];
 foreach($gets as $route) {
-    echo $route;
     if($route['path'] === $path) {
         if(!file_exists(join_paths('controllers', $route['controller']))) {
             echo "Path does not exist.";
