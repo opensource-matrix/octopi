@@ -2,5 +2,5 @@
 
 echo "Hello, world!<br>";
 if($_GET['test']) {
-    echo "<br>Just a test!";
+    echo "Just a test!";
 }
