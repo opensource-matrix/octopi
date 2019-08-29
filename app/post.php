@@ -1,6 +1,6 @@
 <?php
 
-function doPost($gets, $path, $response) {
+function doPost($posts, $path, $response) {
     $good = False;
     foreach($gets as $route) {
         if($route['path'] === $path) {
