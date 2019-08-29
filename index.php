@@ -80,4 +80,4 @@ class TestModel extends Model {
     public $awesome = 'AmAzIng';
 }
 
-echo Grill('<title>{awesome}</h1>', new TestModel);
+echo Grill('<title>{awesome}</title>', new TestModel);
