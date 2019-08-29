@@ -18,7 +18,8 @@ include 'app/post.php';
 /*
 Symfony Modules
 ---------------
-The Symfony modules are used server side for HTTP requests.
+The Symfony modules are used server side for HTTP requests.  They give Octopi
+data 
 */
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
