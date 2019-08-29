@@ -18,13 +18,13 @@ foreach($routes as $route) {
     $data = $route->getData();
     if($data['path'] === $path) {
         echo $data['controller'].' ';
-        echo file_exists('controllers/' + $data['controller'] + '.php') ? 'EXISTS' : 'DOESN\'T EXIST';
-        if(file_exists('controllers/' + $data['controller'] + '.php')) {
+        echo file_exists('controllers/' + $data['controller']) ? 'EXISTS' : 'DOESN\'T EXIST';
+        if(file_exists('controllers/' + $data['controller'])) {
             $response->setContent("Controller doesn't exist.");
             $response->status(404);
             $good = False;
         } else {
-            require_once 'controllers/' + $data['controller'] + '.php';
+            require_once 'controllers/' + $data['controller'];
             $good = True;
         }
         //$good = True;
