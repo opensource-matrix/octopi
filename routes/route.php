@@ -30,7 +30,7 @@ class octopi_routes {
 
     public static function get($path, $controller) {
         try {
-            $this->gets.append(array(
+            $Route->gets.append(array(
                 'path' => $path,
                 'controller' => $controller
             ));
