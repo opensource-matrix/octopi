@@ -13,7 +13,7 @@ class octopi_route {
     }
 
     function get() {
-
+        
     }
 
     function getData() {
