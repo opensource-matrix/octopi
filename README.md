@@ -33,7 +33,7 @@ $Route::get('/', function() {
 })
 ```
 
-## Hosting
+## Execution
 To preview the above example, run the command:
 ```shell
 symfony server:start
