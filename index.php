@@ -46,7 +46,7 @@ include 'app/get.php';
 include 'app/post.php';
 
 if($_SERVER['REQUEST_METHOD'] == 'GET') {
-    doGet($gets, );
+    doGet($gets, $path, $response);
 }
 
 if(!$good) {
