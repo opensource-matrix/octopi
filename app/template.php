@@ -30,7 +30,7 @@ class grill
         return true;
     }
 
-    public function render($tags) {
+    public function render($model) {
         foreach($tags as $key => $value) {
             $this->tags[$key] = $value;
         }
