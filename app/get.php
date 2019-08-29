@@ -8,6 +8,7 @@ function doGet($gets, $path, $response) {
         $i = 1;
         echo $regex . '<br>';
         for($i=0;$i<count($paths);$i++) {
+            $pathseg = $paths[$i];
             $g = preg_match('/\{([a-zA-Z0-9-_]*)\}/', $pathseg, $matches);
             echo $g;
             if(g == 1) {
@@ -16,7 +17,7 @@ function doGet($gets, $path, $response) {
                 echo $paths[i];
                 $regex = $regex . $paths[i];
             }
-            $i = i + 1;
+            $i = $i + 1;
         }
         echo $regex . '<br>';
         $regex = $regex . '/';
