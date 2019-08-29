@@ -22,4 +22,11 @@ class grill
     {
         $this->tags[$tag] = $value;
     }
+
+    public function render()
+    {
+        $this->replaceTags();
+    
+        echo $this->template;
+    }
 }
