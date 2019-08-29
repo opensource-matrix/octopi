@@ -24,32 +24,7 @@ $Route::get('/home', 'index.php');
 ```
 
 ## Controllers
-The Controller module is incomplete, but we plan to implement templating with views and models and other standard tools for MVC+PHP frameworks.  To create a new controller, make a file in the `controllers` folder with whatever name you want.
-
-I'll go with `index.php`.  Now you can do whatever kind of default PHP code you want (once again, it's unfinished) but I'll use the default script:
-```php
-<?php
-
-echo "Hello, world!<br>";
-if($_GET['test']) {
-    echo "Just a test!";
-} else {
-    echo "Is not just a test!!";
-}
-?>
-
-<title>Home</title>
-```
-
-To utilize your controller, add a `Route` to the `routes/routes.php` folder.
-```php
-<?php
-require_once 'route.php';
-
-$routes = [
-    new Route('/', 'index.php'),
-];
-```
+Controlling your web page can be done directly from the `routes.php` file,
 
 ## Hosting
 To preview the above example, run the command:
