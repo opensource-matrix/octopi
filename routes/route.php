@@ -1,6 +1,6 @@
 <?php
-class octopi_route {
-    public function __construct() {
+class route {
+    public function __construct($path, $controller) {
         if(!isset($path)) {
             throw new Exception();
         } elseif(!isset($controller)) {
@@ -9,11 +9,6 @@ class octopi_route {
             $this->path = $path;
             $this->controller = $controller;
         }
-        $this->get = array();
-    }
-
-    function get(path, controller) {
-
     }
 
     function getData() {
