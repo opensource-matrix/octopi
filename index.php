@@ -24,7 +24,6 @@ function join_paths() {
 }
 
 /* Get Routes */
-/*
 $routes = $Route->getData();
 foreach($Route->getData() as $route) {
     if($route['path'] === $path) {
@@ -37,7 +36,7 @@ foreach($Route->getData() as $route) {
         //$good = True;
     }
 }
-*/
+
 if(!$good) {
     echo '404; path not found :(';
 }
