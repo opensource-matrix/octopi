@@ -62,7 +62,8 @@ if(!$good) {
 /*
 Send the Response
 -----------------
-This sends the response to the client, whether it's a web browser or an HTTP request.
+This sends the response to the client, whether it's a web browser
+or an HTTP request.
 */
 $response->send();
 
