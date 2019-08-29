@@ -1,5 +1,7 @@
 <?php
 
 function view($path) {
-    if(file_exists)
+    if(file_exists($path)) {
+        
+    }
 }
