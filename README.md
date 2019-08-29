@@ -8,7 +8,9 @@ Routing with Octopi is simple, as it includes it's own Routing toolkit.  It curr
 - `GET`
 
 ```php
+/*
 
+*/
 Route::get('/', 'index.php')
 ```
 
