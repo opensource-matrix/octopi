@@ -7,10 +7,11 @@ built in, and it's not directly used by the user.
 */
 
 function Grill($file, $data) {
-    $data = $data[];
-    foreach($data as $key => $value)
-    {
-        $template = str_replace('{'.$key.'}', $value, $template);
+    if(is_subclass_of($data, 'Model')) {
+        foreach($data as $key => $value)
+        {
+            $template = str_replace('{'.$key.'}', $value, $template);
+        }
+        return $template;
     }
-    return $template;
 }
