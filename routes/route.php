@@ -9,10 +9,11 @@ class octopi_route {
             $this->path = $path;
             $this->controller = $controller;
         }
+        $this->get = array();
     }
 
     function get() {
-        
+
     }
 
     function getData() {
