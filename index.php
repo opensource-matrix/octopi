@@ -31,6 +31,8 @@ function join_paths() {
     return preg_replace('#/+#','/',join('/', $paths));
 }
 
+/*
+*/
 $routes = $Route->getData();
 $gets = $routes['gets'];
 $posts = $routes['posts'];
