@@ -1,3 +1,2 @@
-npm_ignore
-hook.js
-package-lock.json
+./hook.js
+./package-lock.json
