@@ -37,3 +37,5 @@ if($_GET['test']) {
 
 <title>Home</title>
 ```
+
+To utilize your controller,
