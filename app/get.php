@@ -14,7 +14,6 @@ function doGet($gets, $path, $response) {
             } else {
                 $regex = $regex . $paths[i];
             }
-            echo "<br>"
             $i++;
         }
         echo $regex;
