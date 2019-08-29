@@ -1,6 +1,6 @@
 <?php
 
-function doPost($posts, $path, $response) {
+function doGet($gets, $path, $response) {
     $good = False;
     foreach($gets as $route) {
         if($route['path'] === $path) {
@@ -8,13 +8,8 @@ function doPost($posts, $path, $response) {
                 $func = $route['controller'];
                 $response->setContent($func());
                 $good = True;
-            } elseif(gettype($route['controller']) == 'string') {
-                if(!file_exists(join_paths('controllers', $route['controller']))) {
-                    echo "Path does not exist.";
-                } else {
-                    include join_paths('controllers', $route['controller']);
-                    $good = True;
-                }
+            } else {
+                $good = False;
             }
             //$good = True;
         }
