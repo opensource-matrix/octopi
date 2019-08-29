@@ -10,6 +10,7 @@ function doGet($gets, $path, $response) {
             preg_match('/\{([a-zA-Z0-9-_]*)\}/', $pathseg, $matches);
             $vars[$matches[1]] = $i;
             $i++;
+            echo 'Test';
         }
         if($route['path'] === $path) {
             print_r($vars);
