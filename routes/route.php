@@ -34,6 +34,8 @@ class octopi_routes {
                 'path' => $path,
                 'controller' => $controller
             ));
+        } catch(e) {
+            
         }
         echo 'hello, world!';
     }
