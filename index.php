@@ -2,6 +2,7 @@
 /*
 Loader
 ------
+Loads the autoloader provided with Composer.
 */
 $loader = require 'vendor/autoload.php';
 $loader->register();
