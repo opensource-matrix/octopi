@@ -49,6 +49,8 @@ if(!$good) {
     echo '404; path not found :(';
 }
 
+$response->send();
+
 /*
 switch ($request->getPathInfo()) {
     case '/':
