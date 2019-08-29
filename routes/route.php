@@ -29,7 +29,7 @@ class octopi_routes {
     }
 
     public static function get($path, $controller) {
-        print_r($this);
+        print_r(isset($this));
     }
 }
 
