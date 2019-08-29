@@ -18,8 +18,7 @@ include 'app/post.php';
 /*
 Symfony Modules
 ---------------
-The Kernel modules power both ends of your application.
-They are utilized in this very script.
+The Symfony modules are used server side to 
 */
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
