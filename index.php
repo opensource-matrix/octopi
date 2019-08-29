@@ -2,9 +2,9 @@
 /* Load the Website */
 $loader = require 'vendor/autoload.php';
 $loader->register();
-/*
+
 include 'routes/routes.php';
-*/
+
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
