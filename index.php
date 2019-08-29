@@ -23,7 +23,7 @@ function join_paths() {
 
     return preg_replace('#/+#','/',join('/', $paths));
 }
-/* Get Routes */
+
 $routes = $Route->getData();
 $gets = $routes['gets'];
 foreach($gets as $route) {
