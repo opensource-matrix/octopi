@@ -29,7 +29,7 @@ Controlling your web page can be done directly from the `routes/routes.php` file
 ### Direct Controllers
 To use `Direct Controllers`, you can pass a function to `$Route::get`.
 ```php
-
+<?php
 ```
 
 ## Hosting
