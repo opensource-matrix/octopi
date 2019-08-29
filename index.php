@@ -34,6 +34,7 @@ foreach($gets as $route) {
             if(is_callable($route['controller'])) {
                 $func = $route['controller'];
                 $func();
+                $good = True;
             } elseif(gettype($route['controller']) == 'string') {
                 require_once join_paths('controllers', $route['controller']);
                 $good = True;
