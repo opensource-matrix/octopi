@@ -39,3 +39,5 @@ if($_GET['test']) {
 ```
 
 To utilize your controller, add a `Route` to the `routes/routes.php` folder.
+```
+```
