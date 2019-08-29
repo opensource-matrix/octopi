@@ -3,6 +3,7 @@
 $loader = require 'vendor/autoload.php';
 $loader->register();
 
+include 'routes/route.php'
 include 'routes/routes.php';
 
 use Symfony\Component\HttpFoundation\Request;
