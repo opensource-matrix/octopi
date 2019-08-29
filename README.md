@@ -4,7 +4,7 @@ Octopi is a PHP framework for robust applications.
 It's obviously incomplete, but it should work for smaller applications as of 2019-08-28.
 
 ## Routing
-Routing with Octopi is simple, as it includes it's o
+Routing with Octopi is simple, as it includes it's own Routing toolkit.  
 
 ```php
 new Route('[PATH]', '[CONTROLLER FILE NAME]');
