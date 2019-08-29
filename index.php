@@ -1,6 +1,7 @@
 <?php
 /*
-
+Loader
+------
 */
 $loader = require 'vendor/autoload.php';
 $loader->register();
