@@ -18,6 +18,7 @@ $Route::get('/', 'index.php')
 Here is the default `routes/routes.php` file, as an example.
 ```php
 <?php
+
 $Route::get('/', 'index.php');
 $Route::get('/home', 'index.php');
 ```
