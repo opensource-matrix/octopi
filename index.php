@@ -1,5 +1,7 @@
 <?php
-/* Load the Website */
+/*
+
+*/
 $loader = require 'vendor/autoload.php';
 $loader->register();
 
