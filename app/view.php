@@ -17,5 +17,7 @@ function view($path) {
         $data = fread($path, filesize($path, 'r'));
         fclose($handle);
         return $data;
+    } else {
+        return 'File does not exist.';
     }
 }
