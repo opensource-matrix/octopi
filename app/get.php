@@ -10,7 +10,7 @@ function doGet($gets, $path, $response) {
             if(!$pathseg == '') {
                 $g = preg_match('/\{([a-zA-Z0-9-_]*)\}/', $pathseg, $matches);
                 if(g) {
-                    $regex += '\/[a-zA-Z0-9-_]';
+                    $regex += $regex . '\/[a-zA-Z0-9-_]';
                 } else {
                     $regex = $regex . '';
                 }
