@@ -24,6 +24,7 @@ function join_paths() {
     return preg_replace('#/+#','/',join('/', $paths));
 }
 
+/* Get  */
 foreach($routes as $route) {
     $data = $route->getData();
     if($data['path'] === $path) {
