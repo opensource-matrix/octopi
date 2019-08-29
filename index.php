@@ -33,13 +33,13 @@ foreach($gets as $route) {
             $func();
             $good = True;
         } elseif(gettype($route['controller']) == 'string') {
+            if(!file_exists(join_paths('controllers', $route['controller']))) {
+                echo "Path does not exist.";
+            } else {
+                echo "Test";
+            }
             require_once join_paths('controllers', $route['controller']);
             $good = True;
-        }
-        if(!file_exists(join_paths('controllers', $route['controller']))) {
-            echo "Path does not exist.";
-        } else {
-            echo "Test";
         }
         //$good = True;
     }
