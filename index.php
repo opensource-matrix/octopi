@@ -45,7 +45,9 @@ They are utilized in this very script.
 include 'app/get.php';
 include 'app/post.php';
 
-
+if($_SERVER['REQUEST_METHOD'] == 'GET') {
+    doGet($gets, );
+}
 
 if(!$good) {
     $response->setStatus(404);
