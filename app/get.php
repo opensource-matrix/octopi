@@ -11,7 +11,7 @@ function doGet($gets, $path, $response) {
             $pathseg = $paths[$i];
             $g = preg_match('/\{([a-zA-Z0-9-_]*)\}/', $pathseg, $matches);
             echo $g;
-            if($g) {
+            if($g === True) {
                 $regex = $regex . '\/[a-zA-Z0-9-_]';
             } else {
                 echo $paths[i];
