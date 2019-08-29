@@ -24,7 +24,7 @@ function join_paths() {
 }
 /* Get Routes */
 $routes = $Route->getData();
-$gets = $routes['gets']
+$gets = $routes['gets'];
 foreach($gets as $route) {
     echo $route;
     if($route['path'] === $path) {
