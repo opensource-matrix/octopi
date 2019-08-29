@@ -1,5 +1,9 @@
 <?php
 
 $Route::get('/', function() {
-    return view('index');
+    if(_GET['test'] == 'true') {
+        return view('index');
+    } else {
+        
+    }
 });
