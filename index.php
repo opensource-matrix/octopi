@@ -22,7 +22,6 @@ function join_paths() {
 
     return preg_replace('#/+#','/',join('/', $paths));
 }
-echo "Test2s";
 /* Get Routes */
 $routes = $Route->getData();
 $gets = $routes->gets;
