@@ -11,7 +11,7 @@ function join_paths() {
 }
 
 function view($path) {
-    if(file_exists(join_paths(__DIR__, '../views', '$path'))) {
+    if(file_exists(join_paths(__DIR__, 'views', '$path'))) {
         $fn = fopen("myfile.txt","r");
         $result = null;
         while(! feof($fn))  {
