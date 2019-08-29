@@ -27,7 +27,7 @@ class octopi_routes {
     }
 
     public static function get($path, $controller) {
-        $this->gets[$path] = $controller;
+        $this->gets.append();
         echo 'hello, world!';
     }
 
