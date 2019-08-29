@@ -21,6 +21,7 @@ class route {
 
 class octopi_routes {
     static $gets;
+    static $posts;
 
     public function __construct() {
         $this::$gets = array();
