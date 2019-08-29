@@ -8,6 +8,6 @@ built in, and it's not directly used by the user.
 
 function grill($in, $model) {
     if(gettype($model) == 'object') {
-        
+        if()
     }
 }
