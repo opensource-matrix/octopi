@@ -5,6 +5,7 @@ function doGet($gets, $path, $response) {
     foreach($gets as $route) {
         $paths = explode('/', $route['path']);
         foreach($paths as $pathseg) {
+            $tested = array();
             $tested = preg_match('\{[a-zA-Z0-9-_]*\}', $pathseg)
         }
         if($route['path'] === $path) {
