@@ -17,7 +17,7 @@ $path = $request->getPathInfo();
 foreach($routes as $route) {
     $data = $route->getData();
     if($data['path'] === $path) {
-        if(!file_exists())
+        if(!file_exists($data['controller']))
         //$good = True;
     }
 }
