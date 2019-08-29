@@ -29,6 +29,7 @@ class octopi_routes {
             'path' => $path,
             'controller' => $controller
         ));
+        echo 'tets'
     }
 
     function getData() {
