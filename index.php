@@ -24,7 +24,6 @@ function join_paths() {
 }
 /* Get Routes */
 $gets = $Route->$gets;
-print_r($gets);
 foreach($gets as $route) {
     echo $route;
     /*
