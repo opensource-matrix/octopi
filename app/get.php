@@ -14,7 +14,6 @@ function doGet($gets) {
                 } else {
                     require_once join_paths('controllers', $route['controller']);
                     $good = True;
-                    echo "Test";
                 }
             }
             //$good = True;
