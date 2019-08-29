@@ -20,15 +20,7 @@ class route {
 }
 
 class octopi_routes {
-    public function __construct($path, $controller) {
-        if(!isset($path)) {
-            throw new Exception();
-        } elseif(!isset($controller)) {
-            throw new Exception();
-        } else {
-            $this->path = $path;
-            $this->controller = $controller;
-        }
+    public function __construct() {
         $this->get = array();
     }
 
