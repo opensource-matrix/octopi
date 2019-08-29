@@ -35,7 +35,7 @@ class octopi_routes {
         ));
     }
 
-    public static function get($path, $controller) {
+    public static function post($path, $controller) {
         array_push(self::$gets, array(
             'path' => $path,
             'controller' => $controller
