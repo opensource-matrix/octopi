@@ -20,6 +20,8 @@ class route {
 }
 
 class octopi_routes {
+    public 
+
     public function __construct() {
         $this->gets = new ArrayObject();
         echo "Hello world from __construct <br>";
