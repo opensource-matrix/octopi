@@ -1,4 +1,6 @@
 <?php
 
-$Route::get('/', 'index.php');
+$Route::get('/', function() {
+    
+});
 $Route::get('/home', 'index.php');
