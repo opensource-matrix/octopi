@@ -47,3 +47,5 @@ $routes = [
     new Route('/', 'index.php'),
 ];
 ```
+
+## Hosting
