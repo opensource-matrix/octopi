@@ -16,7 +16,7 @@ function doGet($gets, $path, $response) {
                 echo $paths[i];
                 $regex = $regex . $paths[i];
             }
-            $i++;
+            $i = i + 1;
         }
         echo $regex . '<br>';
         $regex = $regex . '/';
