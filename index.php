@@ -10,7 +10,7 @@ $loader->register();
 /*
 Route Modules
 -------------
-Load the Routes.
+Load the Routes to be used later one.
 */
 include 'routes/route.php';
 include 'routes/routes.php';
