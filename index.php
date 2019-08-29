@@ -15,6 +15,12 @@ They are utilized in this very script.
 include 'app/get.php';
 include 'app/post.php';
 
+/*
+Kernel Modules
+--------------
+The Kernel modules power both ends of your application.
+They are utilized in this very script.
+*/
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
