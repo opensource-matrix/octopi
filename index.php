@@ -78,6 +78,7 @@ $response->send();
 
 class TestModel extends Model {
     public $title = 'My Octopi Website';
+    public $description = '';
 }
 
 echo Grill('<h2>{title}</h2>', new TestModel);
