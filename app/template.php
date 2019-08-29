@@ -12,7 +12,7 @@ function Grill($template, $model) {
         foreach($data as $key => $value)
         {
             $template = str_replace('{'.$key.'}', $value, $template);
-            if($model)
+            if($model[])
         }
         return $template;
     }
