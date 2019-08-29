@@ -38,4 +38,4 @@ class octopi_routes {
     }
 }
 
-$Route = new octopi_routes()
+$Route = new octopi_routes();
