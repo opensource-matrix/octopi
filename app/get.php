@@ -12,7 +12,7 @@ function doGet($gets) {
                 if(!file_exists(join_paths('controllers', $route['controller']))) {
                     echo "Path does not exist.";
                 } else {
-                    require_once join_paths('controllers', $route['controller']);
+                    include join_paths('controllers', $route['controller']);
                     $good = True;
                 }
             }
