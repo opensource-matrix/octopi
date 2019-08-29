@@ -1,6 +1,6 @@
 <?php
 
 $Route::get('/', function() {
-    echo 'TEST';
+    echo 'TEST2';
     return "Hello, world!";
 });
