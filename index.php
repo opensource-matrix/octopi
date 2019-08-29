@@ -30,11 +30,6 @@ foreach($routes as $route) {
     }
 }
 
-if(!$good) {
-    $response->setContent("Not Found.");
-    $response->status(404);
-}
-
 /*
 switch ($request->getPathInfo()) {
     case '/':
