@@ -20,4 +20,3 @@ function doGet() {
 if($_SERVER['REQUEST_METHOD'] == 'GET') {
     doGet();
 }
-echo 'her';
