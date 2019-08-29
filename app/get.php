@@ -2,7 +2,7 @@
 
 function doGet($gets, $path, $response) {
     $good = False;
-    $vars = array();
+    $regex = ''
     foreach($gets as $route) {
         $paths = explode('/', $route['path']);
         $i = 0;
