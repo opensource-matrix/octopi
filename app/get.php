@@ -18,7 +18,7 @@ function doGet($gets, $path, $response) {
         $regex = $regex . '/';
         echo $regex;
         print_r($vars);
-        if($route['path'] === $path) {
+        if() {
             if(is_callable($route['controller'])) {
                 $func = $route['controller'];
                 $response->setContent($func());
