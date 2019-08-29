@@ -81,4 +81,3 @@ class TestModel extends Model {
 }
 
 $grill1 = new grill('<h1>{{ echo @tots; }}</h1>');
-$grill1->render(new TestModel);
