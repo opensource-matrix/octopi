@@ -15,6 +15,7 @@ function view($path) {
     echo file_exists($path);
     if(file_exists($path)) {
         $handle = fopen($path, 'r') or die('Unable to open file!');
+        echo 'Test';
         return fread($handle, filesize($path, 'r'));
     }
 }
