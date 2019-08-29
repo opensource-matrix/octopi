@@ -31,6 +31,7 @@ class grill
     }
 
     public function render($model) {
+        if()
         foreach($tags as $key => $value) {
             $this->tags[$key] = $value;
         }
