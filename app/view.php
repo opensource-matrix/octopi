@@ -11,9 +11,8 @@ function join_paths() {
 }
 
 function view($path) {
-    echo realpath(join_paths(__DIR__, '..', 'views', $path));
     if(file_exists(realpath(join_paths(__DIR__, '..', 'views', $path)))) {
-        $fn = fopen(join_paths(__DIR__, '..', 'views', $path), 'r') or die('Unable to open file!');
+        $fn = fopen(realpath(join_paths(__DIR__, '..', 'views', $path)), 'r') or die('Unable to open file!');
         return fread($fn, filesize(join_paths(__DIR__, 'views', '..', $path), 'r'));
     } else {
         echo 'TEST';
