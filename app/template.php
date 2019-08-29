@@ -30,7 +30,8 @@ class grill
         return true;
     }
 
-    public function render(tags) {
+    public function render($tags) {
+        
         $this->replaceTags();
         echo $this->template;
     }
