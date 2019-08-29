@@ -31,7 +31,7 @@ class grill
     }
 
     public function render($tags) {
-        
+        foreach()
         $this->replaceTags();
         echo $this->template;
     }
