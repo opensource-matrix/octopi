@@ -35,6 +35,16 @@ $routes = $Route->getData();
 $gets = $routes['gets'];
 $posts = $routes['posts'];
 
+
+/*
+Kernel Modules
+--------------
+The Kernel modules power both ends of your application.
+They are utilized in this very script.
+*/
+include 'app/get.php';
+include 'app/post.php';
+
 /* GET Method */
 if($_SERVER['REQUEST_METHOD'] == 'GET') {
     $good = doGet($gets, $path, $response);
