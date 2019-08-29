@@ -38,4 +38,4 @@ if($_GET['test']) {
 <title>Home</title>
 ```
 
-To utilize your controller, 
+To utilize your controller, add a `Route` to the `routes/routes.php` folder.
