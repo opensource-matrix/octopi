@@ -56,6 +56,8 @@ if(!$good) {
 }
 
 /*
+Send the Response
+-----------------
 
 */
 $response->send();
@@ -70,6 +72,4 @@ switch ($request->getPathInfo()) {
         break;
     default:
         $response->setContent('Not found!');
-        $response->setStatusCode(Response::HTTP_NOT_FOUND);
-}
-*/
+        $response->setStatusCode(Response::HTTP
