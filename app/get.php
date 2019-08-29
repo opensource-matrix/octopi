@@ -2,7 +2,6 @@
 
 function doGet($gets, $path, $response) {
     $good = False;
-    $paths = explode('/', $path);
     print_r($paths);
     foreach($gets as $route) {
         if($route['path'] === $path) {
