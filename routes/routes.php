@@ -5,3 +5,5 @@ $routes = [
     new Route('/', 'index.php'),
     new Route('/home', 'index.php')
 ];
+
+Route::get('')
