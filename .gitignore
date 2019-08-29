@@ -7,7 +7,7 @@ yarn-error.log*
 lerna-debug.log*
 
 # Unneeded Files
-pacakge-lock.json
+package-lock.json
 hook.js
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
