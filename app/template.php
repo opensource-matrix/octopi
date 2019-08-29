@@ -2,5 +2,5 @@
 /*
 Grill
 -----
-Grill is Octopi's templating engine
+Grill is Octopi's templating engine for models & views. If
 */
