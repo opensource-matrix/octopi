@@ -17,7 +17,7 @@ include 'app/post.php';
 
 /*
 Symfony Modules
---------------
+---------------
 The Kernel modules power both ends of your application.
 They are utilized in this very script.
 */
