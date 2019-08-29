@@ -11,4 +11,11 @@ new Route('[PATH]', '[CONTROLLER FILE NAME]');
 
 Here is the default `routes/routes.php` file, as an example.
 ```php
+<?php
+require_once 'route.php';
+
+$routes = [
+    new Route('/', 'index.php'),
+    new Route('/home', 'index.php')
+];
 ```
