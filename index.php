@@ -48,7 +48,7 @@ include 'app/post.php';
 /*
 Good Checking
 -------------
-
+If good is false, that means that the requested page is not found.
 */
 if(!$good) {
     $response->setContent('Not found.');
