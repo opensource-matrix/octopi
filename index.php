@@ -1,5 +1,6 @@
 <?php
 /* Load the Website */
+echo 'Hello, world!';
 
 $loader = require 'vendor/autoload.php';
 $loader->register();
