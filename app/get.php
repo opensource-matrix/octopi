@@ -15,6 +15,7 @@ function doGet($gets, $path, $response) {
             }
             $i++;
         }
+        echo $regex;
         print_r($vars);
         if($route['path'] === $path) {
             if(is_callable($route['controller'])) {
