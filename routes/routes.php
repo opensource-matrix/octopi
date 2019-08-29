@@ -1,5 +1,5 @@
 <?php
 
 $Route::get('/', function() {
-    return view('inde.html');
+    return view('index.html');
 });
