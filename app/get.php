@@ -6,6 +6,7 @@ function doGet($gets, $path, $response) {
         $paths = explode('/', $route['path']);
         foreach($paths as $pathseg) {
             preg_match('/\{[a-zA-Z0-9-_]*\}/', $pathseg, $matches);
+            echo $matches;
         }
         if($route['path'] === $path) {
             if(is_callable($route['controller'])) {
