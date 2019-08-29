@@ -1,2 +1,2 @@
 # Octopi
-Octopi is a PHP
+Octopi is a PHP framework for robust applications.
