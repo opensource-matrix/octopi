@@ -10,7 +10,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 $request = Request::createFromGlobals();
 $response = new Response();
-echo "Test2s";
 
 $path = $request->getPathInfo();
 
@@ -23,7 +22,7 @@ function join_paths() {
 
     return preg_replace('#/+#','/',join('/', $paths));
 }
-
+echo "Test2s";
 /* Get Routes */
 $routes = $Route->getData();
 $gets = $routes->gets;
