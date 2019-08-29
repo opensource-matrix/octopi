@@ -47,7 +47,7 @@ $gets = $routes['gets'];
 if($_SERVER['REQUEST_METHOD'] == 'GET') {
     $good = doGet($gets, $path, $response);
 } elseif($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $good = doPost($gets, $path, $response);
+    $good = doPost($posts, $path, $response);
 }
 
 if(!$good) {
