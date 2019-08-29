@@ -11,7 +11,7 @@ class grill
     // Tags array
     private $tags = [];
  
-    // Template file
+    // Template string
     private $template;
 
     public function __construct($text) {
