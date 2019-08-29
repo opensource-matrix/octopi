@@ -7,6 +7,7 @@ built in, and it's not directly used by the user.
 */
 
 function Grill($file, $data) {
+    $data = $data[];
     foreach($data as $key => $value)
     {
         $template = str_replace('{'.$key.'}', $value, $template);
