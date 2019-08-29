@@ -32,7 +32,7 @@ foreach($gets as $route) {
             echo "Path does not exist.";
         } else {
             if(is_callable($route['controller'])) {
-                echo "Test"
+                echo "Test";
                 $func = $route['controller'];
                 $func();
                 $good = True;
