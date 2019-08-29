@@ -1,5 +1,5 @@
 <?php
 
-function view($string) {
+function view($path) {
     
 }
