@@ -60,3 +60,6 @@ If you go to `http://localhost:8000`, it should say:
 Hello, world!
 Is not just a test!!
 ```
+Now try going to `http://localhost:8000`, the output should change:
+```
+```
