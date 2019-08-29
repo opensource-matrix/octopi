@@ -31,6 +31,7 @@ foreach($routes as $route) {
             echo "Path does not exist.";
         } else {
             echo "Path exists.";
+            $good = True;
         }
         //$good = True;
     }
