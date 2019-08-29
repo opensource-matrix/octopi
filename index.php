@@ -4,7 +4,6 @@ $loader = require 'vendor/autoload.php';
 $loader->register();
 
 include 'routes/routes.php';
-echo 'Tets!';
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
