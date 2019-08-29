@@ -34,7 +34,7 @@ function join_paths() {
 /*
 Get Routes
 ----------
-
+This allows us to use the routes in 
 */
 $routes = $Route->getData();
 $gets = $routes['gets'];
