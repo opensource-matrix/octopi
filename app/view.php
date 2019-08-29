@@ -12,7 +12,7 @@ function join_paths() {
 
 function view($path) {
     if(file_exists(join_paths(__DIR__, 'views', '$path'))) {
-        $fn = fopen("myfile.txt","r");
+        $fn = fopen(join_paths(__DIR__, 'views', '$path'),"r");
         $result = null;
         while(! feof($fn))  {
 	        $result = fgets($fn);
