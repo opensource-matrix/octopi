@@ -26,7 +26,6 @@ class grill
         foreach ($this->tags as $tag => $value) {
             $this->$template = str_replace('{'.$tag.'}', $value, $this->$template);
         }
-    
         return true;
     }
 
