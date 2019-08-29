@@ -33,20 +33,6 @@ $Route::get('/', function() {
 })
 ```
 
-### External Controllers
-`External Controllers` are helpful for keeping organized, but if you are just making a smaller application, I would recommend a `Direct Controller`.
-Anywho, `External Controllers` are PHP files in the `controllers/` folder.
-```php
-/* controllers/index.php */
-echo "Hello, world!";
-```
-
-And to use this controller, go to `routes/routes.php` and use the `$Route::get` method.
-```php
-/* routes/routes.php */
-$Route::get('/', 'index.php');
-```
-
 ## Hosting
 To preview the above example, run the command:
 ```shell
