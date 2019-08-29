@@ -32,6 +32,7 @@ class grill
 
     public function render($model) {
         if(is_subclass_of($model, 'Model')) {
+            
             foreach($tags as $key => $value) {
                 $this->tags[$key] = $value;
             }
