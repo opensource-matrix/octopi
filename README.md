@@ -24,7 +24,7 @@ $Route::get('/home', 'index.php');
 ```
 
 ## Controllers
-Controlling your web page can be done directly from the `routes.php` file,
+Controlling your web page can be done directly from the `routes/routes.php` file,
 
 ## Hosting
 To preview the above example, run the command:
