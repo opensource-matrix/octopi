@@ -5,6 +5,7 @@ It's obviously incomplete, but it should work for smaller applications as of 201
 
 ## Routing
 Routing with Octopi is simple, as it includes it's own Routing toolkit.  It currently supports the following methods:
+- `GET`
 
 ```php
 new Route('[PATH]', '[CONTROLLER FILE NAME]');
