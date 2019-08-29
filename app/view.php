@@ -11,7 +11,7 @@ function join_paths() {
 }
 
 function view($path) {
-    if(file_exists($=)) {
+    if(file_exists(join_paths('views', '$path'))) {
 
     }
 }
