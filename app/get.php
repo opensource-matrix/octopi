@@ -4,7 +4,7 @@ function doGet($gets, $path, $response) {
     $good = False;
     $regex = '/';
     foreach($gets as $route) {
-        $paths = implode('/', $route['path']);
+        $paths = explode('/', $route['path']);
         $i = 0;
         print_r($regex . '<br>' . $paths);
         foreach($paths as $pathseg) {
