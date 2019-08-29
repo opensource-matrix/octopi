@@ -6,4 +6,4 @@ $routes = [
     new Route('/home', 'index.php')
 ];
 
-Route::get('')
+Route::get('/', 'index.php');
