@@ -11,6 +11,7 @@ function join_paths() {
 }
 
 function view($path) {
+    $path = $path . 'php'
     $p = realpath(join_paths(__DIR__, '..', 'views', $path));
     if(file_exists($p)) {
         /*
