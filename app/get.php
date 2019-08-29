@@ -17,6 +17,7 @@ function doGet() {
     return $good;
 }
 
+echo 'her';
 if($_SERVER['REQUEST_METHOD'] == 'GET') {
     doGet();
 }
