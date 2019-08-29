@@ -7,13 +7,11 @@ function doGet($gets, $path, $response) {
         $paths = explode('/', $route['path']);
         $i = 0;
         foreach($paths as $pathseg) {
-            if(!$pathseg == '') {
-                $g = preg_match('/\{([a-zA-Z0-9-_]*)\}/', $pathseg, $matches);
-                if(g) {
-                    $regex = $regex . '\/[a-zA-Z0-9-_]';
-                } else {
-                    $regex = $regex . $paths[i];
-                }
+            $g = preg_match('/\{([a-zA-Z0-9-_]*)\}/', $pathseg, $matches);
+            if(g) {
+                $regex = $regex . '\/[a-zA-Z0-9-_]';
+            } else {
+                $regex = $regex . $paths[i];
             }
             $i++;
         }
