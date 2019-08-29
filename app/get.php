@@ -12,7 +12,7 @@ function doGet($gets, $path, $response) {
                 if(g) {
                     $regex += '\/[a-zA-Z0-9-_]';
                 } else {
-                    $regex += '';
+                    $regex = $regex . '';
                 }
             }
             $i++;
