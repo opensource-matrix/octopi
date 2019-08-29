@@ -37,7 +37,7 @@ foreach($gets as $route) {
                 echo "Path does not exist.";
             } else {
                 require_once join_paths('controllers', $route['controller']);
-            $good = True;
+                $good = True;
                 echo "Test";
             }
         }
