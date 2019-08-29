@@ -1,5 +1,5 @@
 <?php
 
-function view() {
-    
+function view(#string) {
+
 }
