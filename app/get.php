@@ -4,7 +4,7 @@ function doGet($gets, $path, $response) {
     $good = False;
     foreach($gets as $route) {
         $paths = explode('/', $route['path']);
-        $paths.forEach() {
+        foreach($paths as $pathseg) {
             
         }
         if($route['path'] === $path) {
