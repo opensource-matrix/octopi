@@ -81,4 +81,4 @@ class TestModel extends Model {
     public $description = '"My Octopi Website" is an example website made with Octopi.';
 }
 
-echo Grill('<h2>{title}</h2>', new TestModel);
+echo Grill('<h2>{title}</h2><p>{description}</p>', new TestModel);
