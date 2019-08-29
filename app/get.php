@@ -15,6 +15,7 @@ function doGet($gets, $path, $response) {
                     $retgex += ''
                 }
             }
+            $i++;
         }
         print_r($vars);
         if($route['path'] === $path) {
