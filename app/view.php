@@ -16,7 +16,6 @@ function view($path) {
         $handle = fopen($path, 'r') or die('Unable to open file!');
         $data = fread($path, filesize($path, 'r'));
         echo 'Test';
-        fclose($handle);
         return $data;
     }
 }
