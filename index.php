@@ -30,7 +30,7 @@ foreach($routes as $route) {
         if(!file_exists(join_paths('controllers', $data['controller']))) {
             echo "Path does not exist.";
         } else {
-            echo "Path exists.";
+            require_once 
             $good = True;
         }
         //$good = True;
