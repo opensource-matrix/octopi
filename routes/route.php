@@ -27,7 +27,7 @@ class octopi_routes {
     public static function get($path, $controller) {
         print_r($this->gets);
         $this->gets[$path] = $controller;
-        ));
+        );
     }
 
     function getData() {
