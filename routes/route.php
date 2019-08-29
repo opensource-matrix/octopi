@@ -32,8 +32,7 @@ class octopi_routes {
         array_push($this->$gets, array(
             'path' => $path,
             'controller' => $controller
-        ));
-        echo 'Test';    
+        ));   
     }
 }
 
