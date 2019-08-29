@@ -25,5 +25,15 @@ The Controller module is incomplete, but we plan to implement templating with vi
 
 I'll go with `index.php`.  Now you can do whatever kind of default PHP code you want (once again, it's unfinished) but I'll use the default script:
 ```php
+<?php
 
+echo "Hello, world!<br>";
+if($_GET['test']) {
+    echo "Just a test!";
+} else {
+    echo "Is not just a test!!";
+}
+?>
+
+<title>Home</title>
 ```
