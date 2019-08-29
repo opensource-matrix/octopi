@@ -1,4 +1,6 @@
 <?php
 
 echo "Hello, world!";
-if()
+if($_GET['test']) {
+    
+}
