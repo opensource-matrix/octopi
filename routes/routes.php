@@ -2,4 +2,4 @@
 include 'route.php';
 
 echo 'Hello, world!';
-$Route->get('/', 'index.php');
+$Route::get('/', 'index.php');
