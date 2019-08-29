@@ -21,6 +21,6 @@ function view($path) {
         fclose($fn);
         return $result;
     } else {
-        echo 'TEST';
+        echo 'TEST1';
     }
 }
