@@ -1,8 +1,8 @@
 <?php
 
-function doGet($gets, $path, $response) {
+function doGet($posts, $path, $response) {
     $good = False;
-    foreach($gets as $route) {
+    foreach($posts as $route) {
         if($route['path'] === $path) {
             if(is_callable($route['controller'])) {
                 $func = $route['controller'];
