@@ -6,6 +6,7 @@ function doGet($gets, $path, $response) {
     foreach($gets as $route) {
         $paths = explode('/', $route['path']);
         $i = 1;
+        echo $regex . '<br>';
         foreach($paths as $pathseg) {
             $g = preg_match('/\{([a-zA-Z0-9-_]*)\}/', $pathseg, $matches);
             echo $g ? TRUE : FALSE;
@@ -16,6 +17,7 @@ function doGet($gets, $path, $response) {
             }
             $i++;
         }
+        echo $regex . '<br>';
         $regex = $regex . '/';
         print_r($vars);
         if(preg_match($regex, $path) == 1) {
