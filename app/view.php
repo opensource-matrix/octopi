@@ -14,11 +14,11 @@ function view($path) {
     if(file_exists(join_paths('views', '$path'))) {
         $fn = fopen("myfile.txt","r");
   
-  while(! feof($fn))  {
-	$result = fgets($fn);
-	echo $result;
-  }
+        while(! feof($fn))  {
+	        $result = fgets($fn);
+	        echo $result;
+        }
 
-  fclose($fn);
+        fclose($fn);
     }
 }
