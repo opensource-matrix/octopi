@@ -19,6 +19,5 @@ function doGet($gets, $path, $response) {
 
 echo $_SERVER['REQUEST_METHOD'];
 if($_SERVER['REQUEST_METHOD'] == 'GET') {
-    echo "TEST";
     doGet($gets, $path, $response);
 }
