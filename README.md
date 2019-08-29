@@ -38,7 +38,8 @@ $Route::get('/', function() {
 ```
 
 ### External Controllers
-
+`External Controllers` are helpful for keeping organized, but if you are just making a smaller application, I would recommend a `Direct Controller`.
+Anywho, 
 
 ## Hosting
 To preview the above example, run the command:
