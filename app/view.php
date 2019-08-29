@@ -14,11 +14,7 @@ function view($path) {
     if(file_exists(join_paths(__DIR__, 'views', '$path'))) {
         $fn = fopen(join_paths(__DIR__, 'views', '$path'), "r");
         $result = null;
-        while(!feof($fn))  {
-	        $result = fgets($fn);
-        }
-
-        fclose($fn);
+        $fn = fopen("webdictionary.txt", "r") or die("Unable to open file!");
         return $result;
     } else {
         echo 'TEST';
