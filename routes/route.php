@@ -32,6 +32,10 @@ class octopi_routes {
             'controller' => $controller
         ));
     }
+
+    public function getData() {
+        
+    }
 }
 
 $Route = new octopi_routes();
