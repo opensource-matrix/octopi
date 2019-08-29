@@ -3,7 +3,7 @@
 function doGet($gets, $path, $response) {
     $good = False;
     foreach($gets as $route) {
-        $paths = explode('/', $path);
+        $paths = explode('/', $route['path']);
         if($route['path'] === $path) {
             if(is_callable($route['controller'])) {
                 $func = $route['controller'];
