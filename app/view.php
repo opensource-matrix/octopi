@@ -11,10 +11,10 @@ function join_paths() {
 }
 
 function view($path) {
-    $path = realpath(join_paths(__DIR__, '..', 'views', $path));
-    if(file_exists($path)) {
-        $handle = fopen($path, 'r') or die('Unable to open file!');
-        $data = fread($path, filesize($path, 'r'));
+    $p = realpath(join_paths(__DIR__, '..', 'views', $path));
+    if(file_exists($p)) {
+        $handle = fopen($p, 'r') or die('Unable to open file!');
+        $data = fread($p, filesize($p, 'r'));
         fclose($handle);
         return $data;
     } else {
