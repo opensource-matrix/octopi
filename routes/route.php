@@ -33,7 +33,9 @@ class octopi_routes {
     }
 
     public function get($path, $controller) {
-        array_push($this->get)
+        array_push($this->get, array(
+            
+        ))
     }
 
     function getData() {
