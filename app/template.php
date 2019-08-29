@@ -31,11 +31,12 @@ class grill
     }
 
     public function render($model) {
-        if()
-        foreach($tags as $key => $value) {
-            $this->tags[$key] = $value;
+        if(is_subclass_of($model, 'Model')) {
+            foreach($tags as $key => $value) {
+                $this->tags[$key] = $value;
+            }
+            $this->replaceTags();
+            return $this->$template;
         }
-        $this->replaceTags();
-        return $this->$template;
     }
 }
