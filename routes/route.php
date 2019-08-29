@@ -35,12 +35,6 @@ class octopi_routes {
         ));
         echo 'hello, world!';
     }
-
-    function getData() {
-        return array(
-            'get' => $this->gets
-        );
-    }
 }
 
 $Route = new octopi_routes();
