@@ -8,9 +8,9 @@ function doGet($gets, $path, $response) {
         $i = 0;
         foreach($paths as $pathseg) {
             if(!$pathseg == '') {
-                preg_match('/\{([a-zA-Z0-9-_]*)\}/', $pathseg, $matches);
+                $good preg_match('/\{([a-zA-Z0-9-_]*)\}/', $pathseg, $matches);
                 if(isset($matches[1])) {
-                    
+
                 }
             }
         }
