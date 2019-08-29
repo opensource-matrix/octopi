@@ -18,5 +18,9 @@ class grill
         $this->$template = $text;
     }
     
-    
+    // Set the {tag} with value
+    public function set($tag, $value)
+    {
+        $this->tags[$tag] = $value;
+    }
 }
