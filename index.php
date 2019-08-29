@@ -45,6 +45,8 @@ They are utilized in this very script.
 include 'app/get.php';
 include 'app/post.php';
 
+
+
 if(!$good) {
     $response->setStatus(404);
 }
