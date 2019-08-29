@@ -21,7 +21,9 @@ class route {
 
 class octopi_routes {
     public function __construct() {
-        $this->gets = array();
+        $this->gets = array(
+            'test' => 'test'
+        );
         echo "Hello world from __construct <br>";
         print_r($this->gets);
     }
