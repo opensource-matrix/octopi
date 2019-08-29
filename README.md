@@ -33,6 +33,7 @@ To use `Direct Controllers`, you can pass a function to `$Route::get`.
 
 $Route::get('/', function() {
     echo "Hello, world!";
+    /* Do whatever you'd like from here on */
 })
 ```
 
