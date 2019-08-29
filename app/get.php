@@ -1,5 +1,5 @@
 <?php
-echo "Test";
+
 function doGet($gets, $path, $response) {
     $good = False;
     foreach($gets as $route) {
