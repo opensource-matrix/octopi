@@ -29,6 +29,7 @@ foreach($routes as $route) {
     if($data['path'] === $path) {
         if(!file_exists('$data['controller'])) {
             
+        }
         //$good = True;
     }
 }
