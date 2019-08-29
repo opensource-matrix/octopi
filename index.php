@@ -6,7 +6,7 @@ $loader->register();
 include 'routes/route.php';
 include 'routes/routes.php';
 include 'app/get.php';
-include 'app/get.php';
+include 'app/post.php';
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
