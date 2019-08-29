@@ -20,7 +20,7 @@ class route {
 }
 
 class octopi_routes {
-    static $gets;
+    public $gets;
     public $_this;
 
     public function __construct() {
@@ -33,7 +33,7 @@ class octopi_routes {
             'path' => $path,
             'controller' => $controller
         ));
-        echo 'Test';
+        echo 'Test';    
     }
 }
 
