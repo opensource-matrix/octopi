@@ -56,3 +56,6 @@ symfony server:start
 It should host at port `8000`.
 
 If you go to `http://localhost:8000`, it should say:
+```
+
+```
