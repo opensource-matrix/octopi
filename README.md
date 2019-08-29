@@ -39,5 +39,12 @@ if($_GET['test']) {
 ```
 
 To utilize your controller, add a `Route` to the `routes/routes.php` folder.
-```
+```php
+<?php
+require_once 'route.php';
+
+$routes = [
+    new Route('/', 'index.php'),
+    new Route('/home', 'index.php')
+];
 ```
