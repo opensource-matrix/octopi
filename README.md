@@ -32,7 +32,7 @@ To use `Direct Controllers`, you can pass a function to `$Route::get`.
 <?php
 
 $Route::get('/', function() {
-    
+    echo "Hello, world!";
 })
 ```
 
