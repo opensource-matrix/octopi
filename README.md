@@ -18,12 +18,7 @@ Route::get('/', 'index.php')
 Here is the default `routes/routes.php` file, as an example.
 ```php
 <?php
-require_once 'route.php';
-
-$routes = [
-    new Route('/', 'index.php'),
-    new Route('/home', 'index.php')
-];
+Route::get('/)
 ```
 
 ## Controllers
