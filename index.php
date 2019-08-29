@@ -7,15 +7,6 @@ include 'routes/route.php';
 include 'routes/routes.php';
 
 /*
-Kernel Modules
---------------
-The Kernel modules power both ends of your application.
-They are utilized in this very script.
-*/
-include 'app/get.php';
-include 'app/post.php';
-
-/*
 Symfony Modules
 ---------------
 The Symfony modules are used server side for HTTP requests.
