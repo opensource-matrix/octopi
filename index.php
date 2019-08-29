@@ -46,7 +46,7 @@ include 'app/get.php';
 include 'app/post.php';
 
 if(!$good) {
-    $response->setStatus()
+    $response->setStatus(404);
 }
 
 $response->send();
