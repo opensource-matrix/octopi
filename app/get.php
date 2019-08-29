@@ -8,6 +8,8 @@ function doGet($gets, $path, $response) {
                 $func = $route['controller'];
                 $response->setContent($func());
                 $good = True;
+            } else {
+                $good = False;
             }
             //$good = True;
         }
