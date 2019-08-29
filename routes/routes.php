@@ -1,5 +1,5 @@
 <?php
 include 'route.php';
-echo 'Hello, world!';
 
+echo 'Hello, world!';
 $Route::get('/', 'index.php');
