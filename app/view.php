@@ -19,7 +19,6 @@ function view($path) {
         fclose($handle);
         */
         $data = 'Hello, world!';
-        echo $data;
         return $data;
     } else {
         return 'Octopi View ' . $path . ' does not exist.';
