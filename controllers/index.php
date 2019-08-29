@@ -7,3 +7,5 @@ if($_GET['test']) {
     echo "Is not just a test!!";
 }
 ?>
+
+<title>Home</title>
