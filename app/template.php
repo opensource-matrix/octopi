@@ -15,6 +15,6 @@ class grill
     private $template;
 
     public function __construct($text) {
-        
+        $this->$template = $text;
     }
 }
