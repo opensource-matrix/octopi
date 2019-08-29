@@ -31,7 +31,8 @@ class octopi_routes {
     public function get($path, $controller) {
         echo '<br><br>Exists: ';
         array_push($this->$gets, array(
-            ''
+            'path': $path,
+            'controller': $controller
         ))
     }
 }
