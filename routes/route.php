@@ -21,11 +21,11 @@ class route {
 
 class octopi_routes {
     public function __construct() {
-        $this->get = array();
+        $this->gets = array();
     }
 
     public static function get($path, $controller) {
-        array_push($this->get, array(
+        array_push($this->gets, array(
             path => $path,
             controller => $controller
         ));
