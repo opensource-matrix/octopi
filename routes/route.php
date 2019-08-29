@@ -29,7 +29,7 @@ class octopi_routes {
     }
 
     public static function get($path, $controller) {
-        print_r(isset(self::gets) ? 'true' : 'false');
+        print_r(isset(self::$gets) ? 'true' : 'false');
     }
 }
 
