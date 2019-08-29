@@ -15,5 +15,5 @@ function doPost($posts, $path, $response) {
 }
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $good = doGet($gets, $path, $response);
+    $good = doPost($gets, $path, $response);
 }
