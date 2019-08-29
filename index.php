@@ -30,7 +30,7 @@ $gets = $routes['gets'];
 
 /* GET Method */
 if($_SERVER['REQUEST_METHOD'] == 'GET') {
-    doGet();
+    good = doGet();
 }
 
 if(!$good) {
