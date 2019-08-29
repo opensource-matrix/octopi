@@ -20,7 +20,7 @@ class route {
 }
 
 class octopi_routes {
-    public 
+    public $gets;
 
     public function __construct() {
         $this->gets = new ArrayObject();
