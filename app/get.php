@@ -4,8 +4,8 @@ require_once 'pathtoregex.php';
 function doGet($gets, $path, $response) {
     $good = False;
     foreach($gets as $route) {
-        $regex = '/';
-        
+        $regex = PathToRegexp::convert($path, $keys, $options);;
+
         if(preg_match($regex, $path) == 1) {
             if(is_callable($route['controller'])) {
                 $func = $route['controller'];
