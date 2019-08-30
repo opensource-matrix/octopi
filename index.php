@@ -14,6 +14,7 @@ Load the Tools that the user can use.
 */
 include 'app/model.php';
 include 'app/template.php';
+include 'app/view.php';
 
 /*
 Route Modules
