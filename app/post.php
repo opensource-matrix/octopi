@@ -1,9 +1,9 @@
 <?php
 require_once 'pathtoregex.php';
 
-function doGet($gets, $path, $response) {
+function doPost($posts, $path, $response) {
     $good = False;
-    foreach($gets as $route) {
+    foreach($posts as $route) {
         $keys = array();
         $regex = PathToRegexp::convert($route['path'], $keys);
         if(preg_match($regex, $path) == 1) {
@@ -18,6 +18,6 @@ function doGet($gets, $path, $response) {
     return $good;
 }
 
-if($_SERVER['REQUEST_METHOD'] == 'GET') {
-    $good = doGet($gets, $path, $response);
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $good = doPost($posts, $path, $response);
 }
