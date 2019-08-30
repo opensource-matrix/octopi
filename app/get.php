@@ -4,6 +4,7 @@ require_once 'pathtoregex.php';
 function doGet($gets, $path, $response) {
     $good = False;
     foreach($gets as $route) {
+        $keys = array();
         $regex = PathToRegexp::convert($path, $keys, $options);;
 
         if(preg_match($regex, $path) == 1) {
