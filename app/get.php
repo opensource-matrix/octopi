@@ -1,4 +1,5 @@
 <?php
+require_once 'pathtoregex.php';
 
 function doGet($gets, $path, $response) {
     $good = False;
