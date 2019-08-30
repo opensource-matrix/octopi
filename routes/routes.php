@@ -1,5 +1,7 @@
 <?php
 
+class 
+
 $Route::get('/user', function() {
     return view('index', 'index');
 });
