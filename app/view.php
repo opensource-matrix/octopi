@@ -22,7 +22,7 @@ function view($path, $model) {
         */
         $data = file_get_contents($p);
         if($model) {
-            $data = Grill($data, new ucwords($model));
+            $data = Grill($data, $model);
         }
         return $data;
     } else {
