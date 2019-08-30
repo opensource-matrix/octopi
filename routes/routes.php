@@ -8,7 +8,7 @@ class DataModel2 extends Model {
     public $websiteName = 'My Octopi Website';
 
     public function __construct($user) {
-        this->$websiteName = 'My Octopi Website!';
+        $this->$websiteName = 'My Octopi Website!';
     }
 }
 
