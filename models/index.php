@@ -2,6 +2,6 @@
 
 namespace App;
 
-class Index extends Model{
-    public $
+class Index extends Model {
+    public $name = '';
 }
