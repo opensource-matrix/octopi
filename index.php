@@ -12,7 +12,6 @@ Toolkit Modules
 ---------------
 Load the Tools that the user can use.
 */
-include 'app/view.php';
 include 'app/model.php';
 include 'app/template.php';
 
