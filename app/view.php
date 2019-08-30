@@ -10,7 +10,7 @@ function join_paths() {
     return preg_replace('#/+#', DIRECTORY_SEPARATOR, join(DIRECTORY_SEPARATOR, $paths));
 }
 
-function view($path, ) {
+function view($path, $model) {
     $path = $path . '.html';
     $p = realpath(join_paths(__DIR__, '..', 'views', $path));
     if(file_exists($p)) {
