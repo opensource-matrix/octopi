@@ -1,7 +1,7 @@
 <?php
 
 class DataModel extends Model {
-    public $websiteName = '';
+    public $websiteName = 'My Octopi Website';
 }
 
 $Route::get('/user', function() {
