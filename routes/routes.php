@@ -1,6 +1,5 @@
 <?php
 
-$Route::get('/hello/:test', function() {
-    echo 'Test';
+$Route::get('/:test', function() {
     return view('index');
 });
