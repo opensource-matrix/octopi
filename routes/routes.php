@@ -1,6 +1,8 @@
 <?php
 
-class 
+class DataModel extends Model {
+    
+}
 
 $Route::get('/user', function() {
     return view('index', 'index');
