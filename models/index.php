@@ -3,5 +3,5 @@
 namespace App;
 
 class Index extends Model {
-    public $name = '';
+    public $name = 'Test Application';
 }
