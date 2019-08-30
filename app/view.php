@@ -22,6 +22,7 @@ function view($path, $model) {
         */
         $data = file_get_contents($p);
         if(file_exists(realpath(join_paths(__DIR__, '..', 'models', $model + '.php')))) {
+            use App;
             $data = Grill($data, $model);
         }
         return $data;
