@@ -13,7 +13,7 @@ function join_paths() {
 function view($path, $model) {
     $path = $path . '.html';
     $p = realpath(join_paths(__DIR__, '..', 'views', $path));
-    
+    $model = ''
     if(file_exists($p)) {
         /*
         $handle = fopen($p, 'r') or die('Unable to open file!');
