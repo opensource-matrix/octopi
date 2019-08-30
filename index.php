@@ -75,10 +75,3 @@ This sends the response to the client, whether it's a web browser
 or an HTTP request.
 */
 $response->send();
-
-class TestModel extends Model {
-    public $title = 'My Octopi Website';
-    public $description = '"My Octopi Website" is an example website made with Octopi.';
-}
-
-echo Grill('<h2>{title}</h2><p>{description}</p>', new TestModel);
