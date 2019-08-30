@@ -1,7 +1,7 @@
 <?php
 
 class DataModel extends Model {
-    
+    public $websiteName = '';
 }
 
 $Route::get('/user', function() {
