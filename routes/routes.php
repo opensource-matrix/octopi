@@ -4,7 +4,7 @@ class DataModel extends Model {
     public $websiteName = 'My Octopi Website';
 }
 
-class DataModel extends Model {
+class DataModel2 extends Model {
     public $websiteName = 'My Octopi Website';
 }
 
