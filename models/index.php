@@ -1,3 +1,3 @@
 <?php
 
-use Octopi\Model;
+class 
