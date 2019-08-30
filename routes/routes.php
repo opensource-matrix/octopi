@@ -1,6 +1,6 @@
 <?php
 
-$Route::get('/user/:name', function() {
+$Route::get('/user', function() {
     return view('index');
 });
 
