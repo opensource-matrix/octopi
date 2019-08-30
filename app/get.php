@@ -3,25 +3,8 @@ require_once 'pathtoregex.php';
 
 function doGet($gets, $path, $response) {
     $good = False;
-    $regex = '/';
     foreach($gets as $route) {
-        $paths = explode('/', $route['path']);
-        $i = 1;
-        echo $regex . '<br>';
-        for($i=0;$i<count($paths);$i++) {
-            $pathseg = $paths[$i];
-            $g = preg_match('/\{([a-zA-Z0-9-_]*)\}/', $pathseg, $matches);
-            echo $g;
-            if($g === True) {
-                $regex = $regex . '\/[a-zA-Z0-9-_]';
-            } else {
-                echo $paths[i];
-                $regex = $regex . $paths[i];
-            }
-            $i = $i + 1;
-        }
-        $regex = $regex . '/';
-        echo $regex . '<br>';
+        
         if(preg_match($regex, $path) == 1) {
             if(is_callable($route['controller'])) {
                 $func = $route['controller'];
