@@ -1,4 +1,5 @@
 <?php
+use Jenssegers\Blade\Blade;
 
 function join_paths() {
     $paths = array();
