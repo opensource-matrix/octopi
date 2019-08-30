@@ -21,7 +21,7 @@ function view($path, $model) {
         fclose($handle);
         */
         $data = file_get_contents($p);
-        if(file_exists())
+        if(file_exists(realpath(join_paths(__DIR__, '..', 'model', $path))))
         $data = Grill($data, $model);
         return $data;
     } else {
