@@ -4,6 +4,10 @@ class DataModel extends Model {
     public $websiteName = 'My Octopi Website';
 }
 
+class DataModel extends Model {
+    public $websiteName = 'My Octopi Website';
+}
+
 $Route::get('/user', function() {
     return view('index', new DataModel);
 });
