@@ -12,6 +12,6 @@ $Route::get('/user', function() {
     return view('index', new DataModel);
 });
 
-$Route::get('/user/:name', function() {
-    return view('index');
+$Route::get('/user', function() {
+    return view('index', new DataModel);
 });
