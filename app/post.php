@@ -1,19 +1,23 @@
 <?php
+require_once 'pathtoregex.php';
 
-function doPost($posts, $path, $response) {
+function doGet($gets, $path, $response) {
     $good = False;
-    foreach($posts as $route) {
-        if($route['path'] === $path) {
+    foreach($gets as $route) {
+        $keys = array();
+        $regex = PathToRegexp::convert($route['path'], $keys);
+        if(preg_match($regex, $path) == 1) {
             if(is_callable($route['controller'])) {
                 $func = $route['controller'];
-                $response->setContent($func());
+                $response->setContent(call_user_func_array($func, $keys));
                 $good = True;
             }
+            //$good = True;
         }
     }
     return $good;
 }
 
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $good = doPost($posts, $path, $response);
+if($_SERVER['REQUEST_METHOD'] == 'GET') {
+    $good = doGet($gets, $path, $response);
 }
