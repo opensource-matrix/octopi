@@ -2,4 +2,6 @@
 
 namespace App;
 
-class 
+class Index extends Model{
+
+}
