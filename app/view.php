@@ -21,6 +21,7 @@ function view($path, $model) {
         fclose($handle);
         */
         $data = file_get_contents($p);
+        if(file_exists())
         $data = Grill($data, $model);
         return $data;
     } else {
