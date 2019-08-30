@@ -2,7 +2,7 @@
 
 class DataModel extends Model {
     public $websiteName = 'My Octopi Website';
-    public $description = ''
+    public $description = 'This website was made as an example for Octopi.'
 }
 
 class DataModel2 extends Model {
