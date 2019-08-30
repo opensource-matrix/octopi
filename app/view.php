@@ -23,6 +23,7 @@ function view($path, $model) {
         $data = file_get_contents($p);
         if(file_exists(realpath(join_paths(__DIR__, '..', 'models', $model + '.php')))) {
             require_once realpath(join_paths(__DIR__, '..', 'models', $model + '.php'));
+            echo 'test';
             $data = Grill($data, new ucwords($model));
         }
         return $data;
