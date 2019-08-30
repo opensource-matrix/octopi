@@ -5,7 +5,7 @@ function doGet($gets, $path, $response) {
     $good = False;
     foreach($gets as $route) {
         $keys = array();
-        $regex = PathToRegexp::convert($path, $keys, $options);;
+        $regex = PathToRegexp::convert($path, $keys);;
 
         if(preg_match($regex, $path) == 1) {
             if(is_callable($route['controller'])) {
