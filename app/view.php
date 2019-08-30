@@ -13,7 +13,7 @@ function join_paths() {
 function view($path, $model) {
     $path = $path . '.html';
     $p = realpath(join_paths(__DIR__, '..', 'views', $path));
-    $model = $model ? $model : new Model;
+    $model = $model ? $model : Null;
     if(file_exists($p)) {
         /*
         $handle = fopen($p, 'r') or die('Unable to open file!');
@@ -22,7 +22,7 @@ function view($path, $model) {
         */
         $data = file_get_contents($p);
         if(file_exists(realpath(join_paths(__DIR__, '..', 'models', $model + '.php')))) {
-            
+
         }
         $data = Grill($data, $model);
         return $data;
