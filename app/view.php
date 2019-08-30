@@ -21,7 +21,7 @@ function view($path, $model) {
         fclose($handle);
         */
         $data = file_get_contents($p);
-        $data = Grill($data, $model);
+        $data = Grill($data);
         return $data;
     } else {
         return 'Octopi View ' . $path . ' does not exist.';
