@@ -9,6 +9,5 @@ $Route::get('/user', function() {
 });
 
 $Route::get('/user/:name', function() {
-    
     return view('index', new DataModel);
 });
