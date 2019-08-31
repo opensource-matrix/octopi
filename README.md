@@ -71,7 +71,9 @@ $Route::get('/', function() {
 </html>
 ```
 
-Go to `localhost:8000/`
+Go to `localhost:8000/`, it should output something like this:
+```
+```
 
 You can also supply a view without a `Model`.
 
