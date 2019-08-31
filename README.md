@@ -29,3 +29,5 @@ $Route::get('/:page', function($page) {
     return $page;
 });
 ```
+
+
