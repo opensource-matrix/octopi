@@ -30,4 +30,4 @@ $Route::get('/:page', function($page) {
 });
 ```
 
-So if you go to '/hello',
+So if you go to `localhost:8000/hello`,
