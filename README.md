@@ -71,7 +71,7 @@ $Route::get('/', function() {
 </html>
 ```
 
-
+Go to 
 
 You can also supply a view without a `Model`.
 
