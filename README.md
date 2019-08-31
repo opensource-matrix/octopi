@@ -1,2 +1,4 @@
 # Octopi
-Octopi is a web framework for robust applications.
+Octopi is a web framework for robust applications.  It includes:
+
+-
