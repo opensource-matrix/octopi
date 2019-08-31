@@ -56,7 +56,20 @@ $Route::get('/', function() {
 });
 ```
 ```html
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Octopi Website</title>
+        <style>
+        body { background-color: lightgray; margin: 100px; font-family: Consolas, monaco, monospace; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 24px; }
+        </style>
+    </head>
+    <body>
+        <!-- Octopi -->
+        <h2>{websiteName}</h2>
+        <h3>{description}</h3>
+    </body>
+</html>
 ```
 
 You can also supply a view without a `Model`.
