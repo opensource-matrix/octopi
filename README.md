@@ -9,5 +9,5 @@ Octopi is a PHP framework for robust applications.  It includes:
 Octopi's routing system uses paths and controllers to get your user to where you want them to be.
 ```php
 /* GET Request Routing */
-$Route::get($)
+$Route::get($path, $controlller);
 ```
