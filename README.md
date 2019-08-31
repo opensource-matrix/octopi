@@ -30,4 +30,4 @@ $Route::get('/:page', function($page) {
 });
 ```
 
-So if you go to '/
+So if you go to '/hello',
