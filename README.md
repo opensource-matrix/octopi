@@ -15,6 +15,7 @@ $Route::get($path, $controller);
 
 ```php
 /*
-Example Hello World
+Example Hello World Application
 */
+
 ```
