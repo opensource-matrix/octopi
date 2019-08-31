@@ -30,4 +30,7 @@ $Route::get('/:page', function($page) {
 });
 ```
 
-So if you go to `localhost:8000/hello`,
+So if you go to `localhost:8000/hello`, it should output:
+```
+hello
+```
