@@ -6,4 +6,4 @@ Octopi is a PHP framework for robust applications.  It includes:
 - More soon!
 
 ## Routing
-Octopi's routing system is 
+Octopi's routing system uses 
