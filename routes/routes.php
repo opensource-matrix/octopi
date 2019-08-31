@@ -14,14 +14,4 @@ class DataModel2 extends Model {
     }
 }
 
-$Route::get('/user', function() {
-    return view('index', new DataModel);
-});
-
-$Route::get('/:argument', function($argument) {
-    echo $argument;
-    if($argument == 'bad') {
-        echo '<br>No, u.';
-    }
-    return view('index', new DataModel2($name));
-});
+$Route::get('/')
