@@ -15,5 +15,5 @@ class DataModel2 extends Model {
 }
 
 $Route::get('/', function() {
-    
+    return view()
 });
