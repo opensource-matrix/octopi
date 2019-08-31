@@ -9,8 +9,8 @@ class DataModel2 extends Model {
     public $websiteName = 'My Octopi Website';
     public $description = 'Ah, you did it!  Thanks kind sir.';
 
-    public function __construct() {
-        $this->$websiteName = 'My Octopi Website!';
+    public function __construct($name) {
+        $this->$websiteName = 'My Octopi Website!  Opened by ' . $name;
     }
 }
 
@@ -18,6 +18,9 @@ $Route::get('/user', function() {
     return view('index', new DataModel);
 });
 
-$Route::get('/user/:name', function() {
-    return view('index', new DataModel2);
+$Route::get('/:', function($name, $password) {
+    if($name == 'test' && $password == 'octopi') {
+        echo 'Test!!';
+    }
+    return view('index', new DataModel2($name));
 });
