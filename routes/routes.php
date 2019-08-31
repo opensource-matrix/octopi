@@ -18,7 +18,7 @@ $Route::get('/user', function() {
     return view('index', new DataModel);
 });
 
-$Route::get('/:', function($name, $password) {
+$Route::get('/:argument', function($name, $password) {
     if($name == 'test' && $password == 'octopi') {
         echo 'Test!!';
     }
