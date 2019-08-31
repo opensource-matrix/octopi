@@ -43,3 +43,5 @@ class DataModel extends Model {
     public $websiteName = 'Octopi Website';
 }
 ```
+
+Now, you can send it to a `view`, which is supplied in the `views/`
