@@ -21,7 +21,7 @@ $Route::get('/user', function() {
 $Route::get('/:argument', function($argument) {
     echo $argument;
     if($argument == 'bad') {
-        
+        echo 'No, u.';
     }
     return view('index', new DataModel2($name));
 });
