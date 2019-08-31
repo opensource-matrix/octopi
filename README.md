@@ -10,6 +10,6 @@ Octopi's routing system uses paths and controllers to get your user to where you
 ```php
 /* GET Request Routing */
 $Route::get('/', function() {
-
+    
 });
 ```
