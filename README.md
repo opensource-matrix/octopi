@@ -40,6 +40,6 @@ In the `routes/routes.php` file, define some models the extend the `Model` class
 
 ```php
 class DataModel extends Model {
-    
+    public $websiteName = 
 }
 ```
