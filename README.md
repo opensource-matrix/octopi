@@ -55,6 +55,9 @@ $Route::get('/', function() {
     return view('index', new DataModel);
 });
 ```
+```html
+
+```
 
 You can also supply a view without a `Model`.
 
