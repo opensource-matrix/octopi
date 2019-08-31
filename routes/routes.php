@@ -1,7 +1,7 @@
 <?php
 
 $Route::get('/', function() {
-    return view('index', new DataModel);
+    return view('indx', new DataModel);
 });
 
 $Route::get('/user/:name', function($name) {
