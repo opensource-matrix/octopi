@@ -51,5 +51,5 @@ class DataModel extends Model {
     public $websiteName = 'Octopi Website';
 }
 
-
+$Route::get('/)
 ```
