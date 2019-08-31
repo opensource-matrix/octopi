@@ -25,5 +25,7 @@ $Route::get('/', function() {
 You can also make "placeholder" values that the website viewer supplies.
 
 ```php
-$Route::get('/:page')
+$Route::get('/:page', function($page) {
+
+});
 ```
