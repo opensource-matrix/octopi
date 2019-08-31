@@ -44,4 +44,4 @@ class DataModel extends Model {
 }
 ```
 
-Now, you can send it to a `view`, which is supplied in the `views/`
+Now, you can send it to a `view`, which is supplied in the `views/` folder.  
