@@ -60,6 +60,6 @@ You can also supply a view without a `Model`.
 
 ```php
 $Route::get('/', function() {
-    
+    return view('index');
 })
 ```
