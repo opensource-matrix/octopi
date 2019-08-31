@@ -67,10 +67,11 @@ $Route::get('/', function() {
     <body>
         <!-- Octopi -->
         <h2>{websiteName}</h2>
-        <h3>{description}</h3>
     </body>
 </html>
 ```
+
+
 
 You can also supply a view without a `Model`.
 
