@@ -59,4 +59,5 @@ $Route::get('/', function() {
 You can also supply a view without a `Model`.
 
 ```php
+$Route::get('/)
 ```
