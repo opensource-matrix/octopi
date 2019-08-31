@@ -53,5 +53,5 @@ class DataModel extends Model {
 
 $Route::get('/', function() {
     
-})
+});
 ```
