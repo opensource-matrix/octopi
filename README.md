@@ -30,4 +30,4 @@ $Route::get('/:page', function($page) {
 });
 ```
 
-
+So if you go to '/
