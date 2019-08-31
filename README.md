@@ -19,5 +19,5 @@ Example Hello World Application
 */
 $Route::get('/', function() {
     return 'Hello, world!';
-})
+});
 ```
