@@ -6,7 +6,7 @@ class DataModel extends Model {
 }
 
 $Route::get('/', function() {
-    return view('index', new DataModel);
+    return 'Hello!';
 });
 
 $Route::get('/user/:name', function($name) {
