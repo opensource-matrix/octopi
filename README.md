@@ -36,3 +36,4 @@ hello
 ```
 
 ## Models & Views
+In the `routes/routes.php` file,
