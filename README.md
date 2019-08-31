@@ -36,4 +36,4 @@ hello
 ```
 
 ## Models & Views
-In the `routes/routes.php` file,
+In the `routes/routes.php` file, you can define some models.
