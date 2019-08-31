@@ -14,4 +14,6 @@ class DataModel2 extends Model {
     }
 }
 
-$Route::get('/')
+$Route::get('/', function() {
+
+});
