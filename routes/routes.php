@@ -19,8 +19,6 @@ $Route::get('/user', function() {
 });
 
 $Route::get('/:argument', function($argument) {
-    if($name == 'test' && $password == 'octopi') {
-        echo 'Test!!';
-    }
+    echo $argument;
     return view('index', new DataModel2($name));
 });
