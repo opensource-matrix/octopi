@@ -45,3 +45,7 @@ class DataModel extends Model {
 ```
 
 Now, you can send it to a `view`, which is supplied in the `views/` folder.  An example view was placed called `index.html`, but don't include the `.html`.
+
+```php
+
+```
