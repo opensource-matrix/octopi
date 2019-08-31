@@ -52,6 +52,6 @@ class DataModel extends Model {
 }
 
 $Route::get('/', function() {
-    return view()
+    return view('index', new DataModel);
 });
 ```
