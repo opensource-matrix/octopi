@@ -17,3 +17,5 @@ class DataModel2 extends Model {
 $Route::get('/', function() {
     return view('index', new DataModel);
 });
+
+$Route::get('/user/:name')
