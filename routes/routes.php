@@ -19,5 +19,5 @@ $Route::get('/', function() {
 });
 
 $Route::get('/user/:name', function($name) {
-    
+    echo 'Hello, ' . $name
 });
