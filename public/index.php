@@ -5,7 +5,7 @@ Loader
 ------
 Loads the autoloader provided with Composer.
 */
-$loader = require 'vendor/autoload.php';
+$loader = require '../vendor/autoload.php';
 $loader->register();
 
 /*
