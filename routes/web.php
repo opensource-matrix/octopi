@@ -7,7 +7,7 @@ $Route::get('/', function() {
 $Route::get('/user/:name', function($name) {
     $str = '<div>' . $name;
     if($name == 'Octopi') {
-        $str += '<h3>[ADMIN]</h3>';
+        $str = $str . '<h3>[ADMIN]</h3>';
     }
     return $str;
 });
