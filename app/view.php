@@ -12,7 +12,7 @@ function join_paths() {
 
 function view($path, $model) {
     $path = $path . '.html';
-    $p = realpath(join_paths(__DIR__, '..', 'views', $path));
+    $p = realpath(join_paths(__DIR__, '..', 'public', 'views', $path));
     $model = $model ? $model : Null;
     if(file_exists($p)) {
         /*
