@@ -28,7 +28,8 @@ hello
 ```
 
 ### It supports the current methods:
-- 
+- `$Route::post`
+- `$Route::get`
 
 # Contributing
 **Hey!**  Thanks for taking the time to contribute!  If you think there is an error, feel free to report it via a `pull request` or issue.
