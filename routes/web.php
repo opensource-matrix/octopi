@@ -8,7 +8,7 @@ $Route::get('/', function() {
 });
 
 $Route::get('/user/:name', function($name) {
-    return viww('index', [
+    return view('index', [
         'websiteName' => 'Octopi Website',
         'user' => $name
     ]);
