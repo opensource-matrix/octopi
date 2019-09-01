@@ -5,3 +5,4 @@
 |---------------------------------
 | Load the INDEX.PHP File so it can redirect everything.
 */
+include ''
