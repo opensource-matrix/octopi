@@ -2,8 +2,8 @@
 
 /*
 | Symfony Modules
-| ---------------
-The Symfony modules are used server side for HTTP requests.
+|---------------
+| The Symfony modules are used server side for HTTP requests.
 They give Octopi data that powers controllers, routes, soon
 models and views as well. 
 */
