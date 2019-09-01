@@ -1,6 +1,14 @@
 <?php
 
 /*
+Loader
+------
+Loads the autoloader provided with Composer.
+*/
+$loader = require '../vendor/autoload.php';
+$loader->register();
+
+/*
 | Symfony Modules
 |---------------------------------
 | The Symfony modules are used server side for HTTP requests.
@@ -9,14 +17,6 @@
 */
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-
-/*
-Loader
-------
-Loads the autoloader provided with Composer.
-*/
-$loader = require '../vendor/autoload.php';
-$loader->register();
 
 /*
 Toolkit Modules
