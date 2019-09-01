@@ -13,17 +13,17 @@ Toolkit Modules
 ---------------
 Load the Tools that the user can use.
 */
-include 'app/model.php';
-include 'app/template.php';
-include 'app/view.php';
+include '../app/model.php';
+include '../app/template.php';
+include '../app/view.php';
 
 /*
 Route Modules
 -------------
 Load the Routes to be used later one.
 */
-include 'routes/route.php';
-include 'routes/web.php';
+include '../routes/route.php';
+include '../routes/web.php';
 
 /*
 Symfony Modules
