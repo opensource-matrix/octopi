@@ -32,8 +32,8 @@ Route Modules
 -------------
 Load the Routes to be used later one.
 */
-include '../routes/route.php';
-include '../routes/web.php';
+include 'routes/route.php';
+include 'routes/web.php';
 
 $request = Request::createFromGlobals();
 $response = new Response();
