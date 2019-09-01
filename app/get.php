@@ -9,7 +9,7 @@ function doGet($gets, $path, $response) {
         $args = array();
         $res = preg_match($regex, $path, $args);
         $args = array_slice($args, 1);
-        if($res == 1 || ) {
+        if($res == 1 || $route['path'] == '*') {
             if(is_callable($route['controller'])) {
                 $func = $route['controller'];
                 $response->setContent(call_user_func_array($func, $args));
