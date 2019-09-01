@@ -2,7 +2,8 @@
 
 $Route::get('/', function() {
     return view('index', [
-        'websiteName' => 
+        'websiteName' => 'Octopi Website',
+        
     ]);
 });
 
