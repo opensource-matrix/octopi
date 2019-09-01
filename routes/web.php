@@ -5,5 +5,5 @@ $Route::get('/', function() {
 });
 
 $Route::get('/user/:name', function($name) {
-    return 'Hello, ' . $name . '!';
+    return view();
 });
