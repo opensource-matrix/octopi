@@ -2,7 +2,7 @@
 
 class UserModel extends Model {
     public $user;
-    public function __construct($user) {
+    public function __CONSTRUCT($user) {
         $this->$user = $user;
     }
 }
