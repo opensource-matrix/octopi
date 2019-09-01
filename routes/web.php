@@ -11,5 +11,5 @@ $Route::get('/user/:name', function($name) {
     return vuew('index', [
         'websiteName' => 'Octopi Website',
         'user' => $name
-    ])
+    ]);
 });
