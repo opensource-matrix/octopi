@@ -12,5 +12,6 @@ $Route::get('/', function() {
 });
 
 $Route::get('/user/:name', function($name) {
+    $model = new UserModel()
     return view('index', new UserModel($name));
 });
