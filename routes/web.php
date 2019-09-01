@@ -1,7 +1,7 @@
 <?php
 
 $Route::get('*', function() {
-    return view('index', [
+    return view('error', [
         'websiteName' => 'Octopi Website',
         'user' => 'World'
     ]);
