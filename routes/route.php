@@ -19,7 +19,7 @@ class route {
     }
 }
 
-class octopi_routes {
+class octopi_route {
     static $gets;
     static $posts;
 
@@ -49,4 +49,4 @@ class octopi_routes {
     }
 }
 
-$Route = new octopi_routes();
+$Route = new octopi_route();
