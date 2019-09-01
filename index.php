@@ -5,7 +5,7 @@ Loader
 ------
 Loads the autoloader provided with Composer.
 */
-$loader = require '../vendor/autoload.php';
+$loader = require 'vendor/autoload.php';
 $loader->register();
 
 /*
@@ -23,9 +23,9 @@ Toolkit Modules
 ---------------
 Load the Tools that the user can use.
 */
-include '../app/model.php';
-include '../app/template.php';
-include '../app/view.php';
+include 'app/model.php';
+include 'app/template.php';
+include 'app/view.php';
 
 /*
 Route Modules
@@ -56,8 +56,8 @@ Kernel Modules
 The Kernel modules power both ends of your application.  They
 are utilized in this very script.
 */
-include '../app/get.php';
-include '../app/post.php';
+include 'app/get.php';
+include 'app/post.php';
 
 /*
 Good Checking
