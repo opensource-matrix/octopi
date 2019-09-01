@@ -9,7 +9,7 @@ $Route::get('/user/:name', function($name) {
     if($name == 'Octopi') {
         $str = $str . ': [ADMIN]';
     } else {
-        
+        $str = $str . '</div>'
     }
     return $str;
 });
