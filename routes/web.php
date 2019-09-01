@@ -3,7 +3,7 @@
 $Route::get('*', function() {
     return view('error', [
         'websiteName' => 'Octopi Website',
-        'code' => 'World'
+        'code' => '404'
     ]);
 });
 
