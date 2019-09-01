@@ -1,7 +1,9 @@
 <?php
 
 class UserModel extends Model {
-    
+    public function __construct($user) {
+        
+    }
 }
 
 $Route::get('/', function() {
