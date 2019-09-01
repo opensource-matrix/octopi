@@ -1,6 +1,8 @@
 <?php
 
-class 
+class UserModel extends Model {
+    
+}
 
 $Route::get('/', function() {
     return 'Hello!';
