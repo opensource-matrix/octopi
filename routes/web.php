@@ -1,6 +1,7 @@
 <?php
 
 class UserModel extends Model {
+    public $user;
     public function __construct($user) {
         $this->$user = $user;
     }
