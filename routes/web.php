@@ -1,5 +1,7 @@
 <?php
 
+class 
+
 $Route::get('/', function() {
     return 'Hello!';
 });
