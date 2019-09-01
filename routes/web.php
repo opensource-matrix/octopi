@@ -5,6 +5,6 @@ $Route::get('/', function() {
 });
 
 $Route::get('/user/:name', function($name) {
-    $str = ''
+    $str = '<h1>' . $name . '</h1>';
     return '<h1>' . $name . '</h1>';
 });
