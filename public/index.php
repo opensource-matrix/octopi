@@ -25,16 +25,6 @@ Load the Routes to be used later one.
 include '../routes/route.php';
 include '../routes/web.php';
 
-/*
-Symfony Modules
----------------
-The Symfony modules are used server side for HTTP requests.
-They give Octopi data that powers controllers, routes, soon
-models and views as well. 
-*/
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
-
 $request = Request::createFromGlobals();
 $response = new Response();
 
