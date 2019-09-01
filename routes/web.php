@@ -1,7 +1,7 @@
 <?php
 
 $Route::get('/', function() {
-    return view();
+    return view('index', '');
 });
 
 $Route::get('/user/:name', function($name) {
