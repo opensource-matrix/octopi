@@ -45,7 +45,7 @@ Get Routes
 ----------
 This allows us to use the routes in routes/routes.php
 */
-$routes = $Route->getData();
+$routes = Route::getData();
 $gets = $routes['gets'];
 $posts = $routes['posts'];
 

@@ -7,8 +7,7 @@ built in, and it's not directly used by the user.
 */
 
 function Grill($template, $model) {
-    $data = $model;
-    foreach($data as $key => $value)
+    foreach($model as $key => $value)
     {
         $template = str_replace('{'.$key.'}', $value, $template);
     }

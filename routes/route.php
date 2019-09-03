@@ -1,52 +1,25 @@
 <?php
-class route {
-    public function __construct($path, $controller) {
-        if(!isset($path)) {
-            throw new Exception();
-        } elseif(!isset($controller)) {
-            throw new Exception();
-        } else {
-            $this->path = $path;
-            $this->controller = $controller;
-        }
-    }
+$routes = [
+    'gets' => [],
+    'posts' => []
+];
 
-    function getData() {
-        return array(
-            path => $this->path,
-            controller => $this->controller
-        );
-    }
-}
-
-class octopi_route {
-    static $gets;
-    static $posts;
-
-    public function __construct() {
-        $this::$gets = array();
-        $this::$posts = array();
-    }
-
+class Route {
     public static function get($path, $controller) {
-        array_push(self::$gets, array(
+        array_push($routes['gets'], array(
             'path' => $path,
             'controller' => $controller
         ));
     }
 
     public static function post($path, $controller) {
-        array_push(self::$posts, array(
+        array_push($routes['posts'], array(
             'path' => $path,
             'controller' => $controller
         ));
     }
 
-    public function getData() {
-        return array(
-            'gets' => $this::$gets
-        );
+    public static function getData() {
+        return $routes;
     }
 }
-
-$Route = new octopi_route();
