@@ -11,10 +11,12 @@ include 'framework/Router/UrlGenerator.php';
 $request = Request::createFromGlobals();
 $response = new Response();
 
+Route::get('/name', function() {
+    return 'Hello, World!';
+});
+
 Route::get('/name/{name}', function($name) {
-    return 'Hello, ' . $name . '!';
+    echo 'Hello, ' . $name . '!';
 });
 
 Route::connect($request->getRequestUri(), $response);
-
-$response->send();
