@@ -1,4 +1,5 @@
 <?php
+define('OCTOPI_START', microtime(true), true);
 
 require_once __DIR__.'/vendor/autoload.php';
 
@@ -11,12 +12,11 @@ include 'framework/Router/UrlGenerator.php';
 $request = Request::createFromGlobals();
 $response = new Response();
 
-Route::get('/name', function() {
-    return 'Hello, World!';
-});
-
 Route::get('/name/{name}', function($name) {
     return 'Hello, ' . $name . '!';
 });
 
-Route::connect($request->getRequestUri(), $response);
+$path = $request->getRequestUri();
+$path = str_replace("%20", " ", $path);
+
+Route::connect($path, $response);
