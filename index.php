@@ -16,7 +16,7 @@ Route::get('/name', function() {
 });
 
 Route::get('/name/{name}', function($name) {
-    echo 'Hello, ' . $name . '!';
+    return 'Hello, ' . $name . '!';
 });
 
 Route::connect($request->getRequestUri(), $response);

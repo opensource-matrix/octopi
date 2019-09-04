@@ -36,17 +36,28 @@ class Route {
         $urlgenerator = new UrlGenerator;
 
         if($_SERVER['REQUEST_METHOD'] == 'GET') {
-            $hasdone = False;
             foreach(self::$gets as $path => $controller) {
+                $regex = $urlgenerator->convert($path);
+                $matches = [];
+                $out = preg_match($regex, $requestedPath, $matches) ?: False;
+                if($out && $matches[0] == $requestedPath) {
+                    $out_matches = array_slice($matches, 1);
+                    $response->setContent(call_user_func_array($controller, $out_matches));
+                    $response->send();
+                    break;
+                }
+            }
+        } elseif($_SERVER['REQUEST_METHOD'] == 'POST') {
+            foreach(self::$posts as $path => $controller) {
                 $regex = $urlgenerator->convert($path);
                 $matches = [];
                 $out = preg_match($regex, $requestedPath, $matches);
 
-                if($out && !$hasdone) {
+                if($out && !$good) {
                     $out_matches = array_slice($matches, 1);
                     $response->setContent(call_user_func_array($controller, $out_matches));
                     $response->send();
-                    $hasdone = True;
+                    break;
                 }
             }
         }

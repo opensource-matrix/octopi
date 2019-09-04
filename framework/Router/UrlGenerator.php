@@ -14,7 +14,7 @@ class UrlGenerator {
                 }
             }
 
-            $output = '/\/' . implode($out, '\/') . '[\/]?\b/';
+            $output = '/\/' . implode($out, '\/') . '[\/]?/';
             return $output;
         }
     }
