@@ -53,7 +53,7 @@ class Route {
                 $matches = [];
                 $out = preg_match($regex, $requestedPath, $matches);
 
-                if($out && !$good) {
+                if($out && $matches[0] == $requestedPath) {
                     $out_matches = array_slice($matches, 1);
                     $response->setContent(call_user_func_array($controller, $out_matches));
                     $response->send();
