@@ -12,11 +12,7 @@ include 'framework/Router/UrlGenerator.php';
 $request = Request::createFromGlobals();
 $response = new Response();
 
-Route::get('/name/{name}', function($name) {
-    return 'Hello, ' . $name . '!';
-});
+include 'routes/web.php';
 
 $path = $request->getRequestUri();
-$path = str_replace("%20", " ", $path);
-
 Route::connect($path, $response);
