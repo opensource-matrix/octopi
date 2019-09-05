@@ -8,13 +8,13 @@ class UrlGenerator {
 
             foreach($components as $component) {
                 if(preg_match('/\{(.*?)\??\}/', $component)) {
-                    array_push($out, '(.*)');
+                    array_push($out, '([^\/]+)');
                 } elseif(preg_match('/(.*)/', $component)) {
                     array_push($out, $component);
                 }
             }
 
-            $output = '/\/' . implode($out, '\/') . '[\/]?/';
+            $output = '/\/' . implode($out, '\/') . '[\/]?\b/';
             return $output;
         }
     }

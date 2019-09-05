@@ -21,6 +21,10 @@ class ComposerStaticInit743b1b46bfb8f06feda928835e42eb95
             'Symfony\\Component\\Mime\\' => 23,
             'Symfony\\Component\\HttpFoundation\\' => 33,
         ),
+        'L' => 
+        array (
+            'League\\CommonMark\\' => 18,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -43,6 +47,10 @@ class ComposerStaticInit743b1b46bfb8f06feda928835e42eb95
         'Symfony\\Component\\HttpFoundation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/http-foundation',
+        ),
+        'League\\CommonMark\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/commonmark/src',
         ),
     );
 
