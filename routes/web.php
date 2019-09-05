@@ -1,5 +1,6 @@
 <?php
 
-Route::get('/', function() {
-    return 'Hello, world!';
+Route::get('/{oof}', function($oof) {
+    $str = 'Hello, world!  (also ' .$oof. '!)';
+    return $str;
 });
