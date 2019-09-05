@@ -54,8 +54,12 @@ class Route {
                         if($fn) {
                             require $fn;
                             $comp = new $name;
-                            $response->setContent(call_user_func_array(array($comp, $method), $out_matches));
-                            $response->send();
+                            if(is_subclass_of($comp, 'Controller')) {
+                                $response->setContent(call_user_func_array(array($comp, $method), $out_matches));
+                                $response->send();
+                            } else {
+                                throw new ErrorException('Must be a subclass of Controller.');
+                            }
                         }
                     }
                 }

@@ -6,6 +6,7 @@ require_once __DIR__.'/vendor/autoload.php';
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+include 'framework/Controller/Controller.php';
 include 'framework/Router/Route.php';
 include 'framework/Router/UrlGenerator.php';
 

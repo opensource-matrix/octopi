@@ -1,11 +1,7 @@
 <?php
 
-/*
-Route::get('/{oof}', function($oof) {
-    $str = 'Hello, world!  (also ' .$oof. '!)';
-    return $str;
+Route::get('/', function() {
+    return 'Hello, world!  (But it\'s a test)';
 });
-*/
 
-Route::get('/', 'IndexController@test');
 Route::get('/test', 'IndexController@index');
