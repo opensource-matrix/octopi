@@ -9,6 +9,13 @@ use Symfony\Component\HttpFoundation\Response;
 
 require '../framework/Http/ParseDown.php';
 
+/**
+ * Used for rendering views in Controllers.
+ * 
+ * @param string $name
+ * @param array $model
+ * @return string
+ */
 function view($name, $model) {
     $model = $model ?: [];
     $gen = new UrlGenerator();
@@ -22,23 +29,19 @@ function view($name, $model) {
         $filecontent = str_replace('@get(\'' . $key . '\')', $value, $filecontent);
         $filecontent = str_replace('@get("' . $key . '")', $value, $filecontent);
     }
-    $filecontent = preg_replace('/(\@get\((.*)\))/', '', $filecontent);
+    // $filecontent = preg_replace('/(\@get\((.*)\))/', '', $filecontent);
     return $filecontent;
 }
-function markdown($name, $model) {
+
+function markdown($name) {
     $model = $model ?: [];
     $gen = new UrlGenerator();
     $path = realpath($gen->joinPaths('markdown', substr($name, -3) == '.md' ?: $name . '.md'));
     if(file_exists($path)) {
         $filecontent = file_get_contents($path);
     } else {
-        $filecontent = '<h2>404 Not Found<h2>';
+        $filecontent = '<h2>404 Not Found</h2>';
     }
-    foreach($model as $key => $value) {
-        $filecontent = str_replace('@get(\'' . $key . '\')', $value, $filecontent);
-        $filecontent = str_replace('@get("' . $key . '")', $value, $filecontent);
-    }
-    $filecontent = preg_replace('/(\@get\((.*)\))/', '', $filecontent);
     $parsedown = new ParseDown();
     return $parsedown->text($filecontent);
 }

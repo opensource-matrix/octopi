@@ -1,6 +1,12 @@
 <?php
 
 class UrlGenerator {
+    /**
+     * Convert a string to Regexp.
+     * 
+     * @param string $path
+     * @return string
+     */
     public function convert($path) {
         if(isset($path)) {
             $components = array_slice(explode('/', $path), 1);
